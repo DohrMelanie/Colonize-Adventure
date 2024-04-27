@@ -1,0 +1,570 @@
+<mxfile host="Electron" modified="2024-04-27T19:45:03.006Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="nPNwxple954VuYZxYOs0" version="24.2.5" type="device">
+  <diagram name="Page-1" id="kIoQeiN21t5KdOj3PUb6">
+    <mxGraphModel dx="1687" dy="984" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-JuoZAfMqV91oy4r6y4B-1" target="-JuoZAfMqV91oy4r6y4B-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-1" value="Kolonialist verabschiedet sich von Frau + 8J Tochter&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="70" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-9" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="-JuoZAfMqV91oy4r6y4B-2" target="-JuoZAfMqV91oy4r6y4B-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-10" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-JuoZAfMqV91oy4r6y4B-2" target="-JuoZAfMqV91oy4r6y4B-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-12" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-JuoZAfMqV91oy4r6y4B-2" target="-JuoZAfMqV91oy4r6y4B-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-2" value="Welches Essen?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="270" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-14" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-JuoZAfMqV91oy4r6y4B-4" target="-JuoZAfMqV91oy4r6y4B-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-4" value="Fisch + Kartoffeln" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-16" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="-JuoZAfMqV91oy4r6y4B-5" target="-JuoZAfMqV91oy4r6y4B-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-5" value="getrocknete Bohnen" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="300" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-18" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-JuoZAfMqV91oy4r6y4B-6" target="-JuoZAfMqV91oy4r6y4B-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-6" value="Haferbrei + Zimt" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="400" y="384" width="120" height="46" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-JuoZAfMqV91oy4r6y4B-7" target="-JuoZAfMqV91oy4r6y4B-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-7" value="Seemannssonntag = Donnerstag mit sehr gutem Essen" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="390" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e5f0EuEGNa80cOIZYPva-1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-JuoZAfMqV91oy4r6y4B-13" target="-JuoZAfMqV91oy4r6y4B-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-13" value="übergeben + durchgehend krank bis Ende der Reise (Major auch krank)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="585" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-20" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-JuoZAfMqV91oy4r6y4B-15" target="-JuoZAfMqV91oy4r6y4B-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-15" value="Kennenlernen von Albrecht in Offizierskabine" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="585" y="290" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-21" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-JuoZAfMqV91oy4r6y4B-17" target="-JuoZAfMqV91oy4r6y4B-19" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-17" value="Kennenlernen von Major da Haferbrei beide super finden" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="585" y="384" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-19" value="Albrecht und Rodulf gehen Saufen auf Schiff -&amp;gt; Alkoholvergiftung" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="810" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-24" value="Niya gehört zum Volk der Nama, arme Familie, 10 Geschwister, 3 ältere Brüder" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="930" y="555" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="-JuoZAfMqV91oy4r6y4B-25" target="Id97uLMr2BFD8CKkcNPH-1" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-JuoZAfMqV91oy4r6y4B-25" value="Niya und Rudolf treffen sich in der Krankenstation" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="980" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e5f0EuEGNa80cOIZYPva-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.335;entryY=1.064;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-JuoZAfMqV91oy4r6y4B-19" target="-JuoZAfMqV91oy4r6y4B-25" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-1" value="Niya muss auf Rudolf und Albrecht aufpassen" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1180" y="205" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-34" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-1" target="Id97uLMr2BFD8CKkcNPH-24" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1490" y="250" as="sourcePoint" />
+            <mxPoint x="1600" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-7" target="Id97uLMr2BFD8CKkcNPH-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-7" value="Niya freut sich, dass sie aus Minen rauskommt + Menschen versorgen kann" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1170" y="535" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.013;entryY=0.635;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="-JuoZAfMqV91oy4r6y4B-24" target="Id97uLMr2BFD8CKkcNPH-7" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-35" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-11" target="Id97uLMr2BFD8CKkcNPH-21" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-11" value="Niya legt einen kalten Lappen auf die Stirn" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1550" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-23" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-12" target="Id97uLMr2BFD8CKkcNPH-22" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-12" value="Voodoo" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1550" y="665" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-72" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-13" target="Id97uLMr2BFD8CKkcNPH-71" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-13" value="Zerdrückter Kakao" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1550" y="545" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-14" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1550" y="510.0000000000002" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-19" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-14" target="Id97uLMr2BFD8CKkcNPH-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-20" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-14" target="Id97uLMr2BFD8CKkcNPH-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-14" value="mehrere Behandlunsmöglichkeit" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1340" y="510" width="160" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-15" value="Rudolf erzählt Niya von seinen Gefühlen für sie" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2370" y="75" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-46" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-21" target="Id97uLMr2BFD8CKkcNPH-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-21" value="er überlebt und ihm geht es immer besser" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1790" y="444" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-22" value="Er stirbt. - User Zurück gehen&amp;nbsp; möglich" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="1790" y="655" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-38" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-24" target="Id97uLMr2BFD8CKkcNPH-37" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-24" value="Niya legt einen kalten Lappen auf die Stirn" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1460" y="205" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-42" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-37" target="Id97uLMr2BFD8CKkcNPH-41" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-37" value="er überlebt und ihm geht es immer besser" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1694" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-58" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-40" target="Id97uLMr2BFD8CKkcNPH-55" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-40" value="Rudolf redet mit Albrecht darüber" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2370" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-47" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-41" target="Id97uLMr2BFD8CKkcNPH-43" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-41" value="&lt;span style=&quot;color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(251, 251, 251); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;&quot;&gt;Albrecht bekommt mit, wie Rudolf sie anschaut&lt;/span&gt;&lt;div&gt;&lt;br/&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1900" y="200" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-48" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-43" target="Id97uLMr2BFD8CKkcNPH-15" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-49" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-43" target="Id97uLMr2BFD8CKkcNPH-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-53" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-43" target="Id97uLMr2BFD8CKkcNPH-50" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-43" value="Rudolf steht auf sie -&amp;gt; Möglichkeiten damit umzugehen" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2120" y="200" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-44" value="Niya bekommt mit, dass Rudolf mit Albrecht über sie redet (er steht auf sie)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2040" y="430" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-45" value="Rudolf und Albrecht flüchten gemeinsam in den Regenwald und lebten glücklich bis ans Ende ihrer Tage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="5290" y="115" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-54" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-50" target="Id97uLMr2BFD8CKkcNPH-51" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-50" value="Rudolf fühlt sich schuldig wegen seiner Frau" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2370" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-51" value="Rudolf erschießt sich" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="2570" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-94" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-55" target="Id97uLMr2BFD8CKkcNPH-91" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2780" y="236.36363636363637" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2970" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-55" value="Niya spricht ihn darauf an, dass sie es mitbekommen hat" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2560" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-56" value="sie lehnt ihn ab" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2550" y="75" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-57" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.032;entryY=0.617;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-15" target="Id97uLMr2BFD8CKkcNPH-56" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-92" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-59" target="Id97uLMr2BFD8CKkcNPH-91" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-59" value="sie bekommt mehr Essen als der Rest" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3040" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-62" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-60" target="Id97uLMr2BFD8CKkcNPH-59" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-65" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-60" target="Id97uLMr2BFD8CKkcNPH-64" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-60" value="Wie soll er sie behandeln?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2773" y="65" width="150" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-61" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.028;entryY=0.487;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-56" target="Id97uLMr2BFD8CKkcNPH-60" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-69" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-63" target="Id97uLMr2BFD8CKkcNPH-68" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-63" value="er beleidigt sie, schlägt sie + sie wird grundlos in ein Gefängnis gesperrt" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3200" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-67" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-64" target="Id97uLMr2BFD8CKkcNPH-63" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-64" value="er behandelt sie schlechter als den Rest" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3030" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-68" value="sie stirbt im Gefängnis an für Rudolf unbekannte Krankheit" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="3440" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-80" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-70" target="Id97uLMr2BFD8CKkcNPH-77" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-83" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-70" target="Id97uLMr2BFD8CKkcNPH-81" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-88" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-70" target="Id97uLMr2BFD8CKkcNPH-87" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-70" value="Wie geht sie damit um?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2610" y="490" width="200" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-74" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-71" target="Id97uLMr2BFD8CKkcNPH-73" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-71" value="er behandelt sie sehr gut im Laufe der Zeit (sie denkt aus Dankbarkeit)" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="1790" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-76" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-73" target="Id97uLMr2BFD8CKkcNPH-70" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-73" value="sie spricht ihn darauf an, er gibt zu, dass er Gefühle für sie hat" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="2050" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-75" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.15;entryY=0.29;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-44" target="Id97uLMr2BFD8CKkcNPH-70" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-79" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-77" target="Id97uLMr2BFD8CKkcNPH-78" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-77" value="sie ist aus Liebeskrummer traurig, weil sie denkt dass sowieso nichts daraus wird" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3010" y="647.5" width="120" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-78" value="vor lauter Depression ertränkt sie sich" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="3238" y="665" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-84" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-81" target="Id97uLMr2BFD8CKkcNPH-82" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-81" value="sie steht auf jemanden in der Mine und lehnt ihn ab" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3010" y="555" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-86" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-82" target="Id97uLMr2BFD8CKkcNPH-85" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-82" value="er findet heraus, wer ihr Freund ist und erschießt ihn" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3240" y="545" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-85" value="er bringt sie aus Liebeskummer um" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="3460" y="545" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-90" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-87" target="Id97uLMr2BFD8CKkcNPH-89" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-87" value="sie steht nicht auf ihn, tut aber so als ob damit er sie besser behandelt" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3010" y="430" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-129" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-89" target="Id97uLMr2BFD8CKkcNPH-127" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-89" value="die beiden sind ein anscheinendes glückliches Paar" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3238" y="420" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-97" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-91" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="3440" y="275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-91" value="sie erzählt ihm von ihren Gefühlen und die beiden kommen zusammen" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3210" y="235" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-100" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-98" target="Id97uLMr2BFD8CKkcNPH-99" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-98" value="Niya muss in die Minen zurück" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3440" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-105" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-99" target="Id97uLMr2BFD8CKkcNPH-101" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-107" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-99" target="Id97uLMr2BFD8CKkcNPH-102" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-99" value="Er hat die Möglichkeit nach Hause zu seiner Frau Krankenurlaub zu machen" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3660" y="230" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-106" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-101" target="Id97uLMr2BFD8CKkcNPH-103" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-101" value="Er macht den Urlaub" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3890" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-121" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-102" target="Id97uLMr2BFD8CKkcNPH-104" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-102" value="Er bleibt in Namibia bei seiner Geliebten" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3890" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-118" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-103" target="Id97uLMr2BFD8CKkcNPH-108" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-103" value="Wie geht er mit seiner Frau um" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4120" y="140" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-104" value="seine Frau erfährt durch einen Brief von Rudolf an Niya von ihm und seiner Geliebten" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4120" y="260" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-117" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-108" target="Id97uLMr2BFD8CKkcNPH-116" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-108" value="er fühlt sich schuldig und erzählt ihr davon" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4280" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-109" value="Sie überleben beide und lebten glücklich bis ans Ende ihrer Tage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="5050" y="444" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-116" value="Seine Frau bringt sich um" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="4470" y="60" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-126" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-120" target="Id97uLMr2BFD8CKkcNPH-125" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-120" value="Sie lassen sich scheiden&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4320" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-123" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.012;entryY=0.407;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-103" target="Id97uLMr2BFD8CKkcNPH-120" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-124" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.025;entryY=0.651;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-104" target="Id97uLMr2BFD8CKkcNPH-120" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-148" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-125" target="Id97uLMr2BFD8CKkcNPH-146" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-125" value="Er geht zurück nach Namibia" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4510" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-131" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-127" target="Id97uLMr2BFD8CKkcNPH-130" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-127" value="Niya muss in die Minen zurück, währenddessen macht Rudolf Krankenurlaub" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3440" y="420" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-138" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-130" target="Id97uLMr2BFD8CKkcNPH-132" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-142" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-130" target="Id97uLMr2BFD8CKkcNPH-141" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-130" value="Niya trifft auf ihren Schwarm" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3690" y="518" width="170" height="96" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-135" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-132" target="Id97uLMr2BFD8CKkcNPH-133" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-136" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-132" target="Id97uLMr2BFD8CKkcNPH-134" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-132" value="Sie erzählt ihm von ihren Gefühlen" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3910" y="622" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-145" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=1;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-133" target="Id97uLMr2BFD8CKkcNPH-143" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-133" value="Er lehnt sie ab" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4110" y="595" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-140" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-134" target="Id97uLMr2BFD8CKkcNPH-139" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-134" value="Er mag sie auch" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4120" y="707" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-137" value="Zufallsgenerator" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="4050" y="672" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-139" value="Sie flüchten gemeinsam -&amp;gt; Happy End" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="4350" y="708" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-144" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-141" target="Id97uLMr2BFD8CKkcNPH-143" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-141" value="Sie erzählt ihm nicht von ihren Gefühlen" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="3910" y="504" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-143" value="Sie trifft sich wieder mit Rudolf" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4350" y="504" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-152" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-146" target="Id97uLMr2BFD8CKkcNPH-147" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-154" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-146" target="Id97uLMr2BFD8CKkcNPH-153" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-146" value="Rudolf trifft auf Albrecht" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4740" y="190" width="140" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-151" value="" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-147" target="Id97uLMr2BFD8CKkcNPH-149" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-147" value="Rudolf sagt ihm, dass er ein guter Freund ist" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4922" y="135" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-150" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-149" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5290" y="165" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-149" value="Albrecht gesteht Rudolf von seinen Gefühlen, Rudolf steht auch auf ihn" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="5090" y="135" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-175" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-153" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5090" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-153" value="Sie reden nur kurz miteinander, da Rudolf auf der Suche nach Niya ist" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4922" y="230" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-164" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-156" target="Id97uLMr2BFD8CKkcNPH-158" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-165" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-156" target="Id97uLMr2BFD8CKkcNPH-161" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-168" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-156" target="Id97uLMr2BFD8CKkcNPH-166" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-156" value="Rudolf schlägt Niya vor gemeinsam zu flüchten (in den Regenwald)" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4570" y="497" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-157" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.081;entryY=0.47;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-143" target="Id97uLMr2BFD8CKkcNPH-156" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-160" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-158" target="Id97uLMr2BFD8CKkcNPH-109" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-158" value="Sie sagt zu, da sie mittlerweile wirklich auf ihn steht&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4840" y="440" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-163" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-161" target="Id97uLMr2BFD8CKkcNPH-162" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-161" value="Sie muss ihm vorher noch etwas wichtiges sagen ..." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4840" y="545" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-162" value="Sie ist schwanger, flüchten trotzdem beide gemeinsam in den Regenwald, sie stirbt und er muss das Kind alleine aufziehen" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="5042" y="545" width="198" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-169" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-166" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5040" y="672" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-166" value="Sie hauen gemeinsam aus dem Militärlager ab, sie steht nicht wirklich auf ihm und flüchtet vor ihm" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="4840" y="642" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-173" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Id97uLMr2BFD8CKkcNPH-170" target="Id97uLMr2BFD8CKkcNPH-172" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-174" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-170" target="Id97uLMr2BFD8CKkcNPH-171" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-170" value="Soll sie Schiff 1 oder Schiff 2 nach Argentinien nehmen? (sie ist geheim auf dem Schiff)&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="5042" y="635" width="180" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-171" value="Sie wird nicht entdeckt und lebte glücklich bis ans Ende ihrer Tage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="5250" y="715" width="240" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-172" value="Sie wird von den Insassen an Bord entdeckt und aus Grausamkeit ermordet&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="5270" y="622" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-178" value="Sie überleben beide und lebten glücklich bis ans Ende ihrer Tage" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="5620" y="224" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-179" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-195" target="Id97uLMr2BFD8CKkcNPH-184" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5240.43795620438" y="286.86131386861314" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-180" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-195" target="Id97uLMr2BFD8CKkcNPH-186" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5238.515901060071" y="313.99293286219086" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-181" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-195" target="Id97uLMr2BFD8CKkcNPH-189" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5216.188811188811" y="323.91608391608395" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-183" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-184" target="Id97uLMr2BFD8CKkcNPH-178" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-184" value="Sie sagt zu, da sie mittlerweile wirklich auf ihn steht&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="5410" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-185" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-186" target="Id97uLMr2BFD8CKkcNPH-187" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-186" value="Sie muss ihm vorher noch etwas wichtiges sagen ..." style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="5410" y="325" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-187" value="Sie ist schwanger, flüchten trotzdem beide gemeinsam in den Regenwald, sie stirbt und er muss das Kind alleine aufziehen" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="5612" y="325" width="198" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-188" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="Id97uLMr2BFD8CKkcNPH-189" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="5610" y="452" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-189" value="Sie hauen gemeinsam aus dem Militärlager ab, sie steht nicht wirklich auf ihm" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="5410" y="422" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-195" value="Rudolf schlägt Niya vor gemeinsam zu flüchten" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="5090" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-196" value="Sie entkommt ihm und er hat ein gebrochenes Herz" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="5612" y="422" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Id97uLMr2BFD8CKkcNPH-197" value="Zufallsgenerator" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="5270" y="290" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
