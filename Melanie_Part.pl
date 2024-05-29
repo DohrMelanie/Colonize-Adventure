@@ -37,19 +37,19 @@ get_random_choice(Choice) :-
 % Szene 1: Niya trifft auf Rudolf und Albrecht
 scene(niya_introduction) :-
     nl,
-    write('Dein Name lautet Niya Niambe. Du bis 16 Jahre alt, und deine überaus arme Familie gehört zum Volk der Nama. Außerdem hast du 10 Geschwister, darunter drei ältere Brüder.'), nl,
+    write('Dein Name lautet Niya Niambe. Du bis 16 Jahre alt, und deine ueberaus arme Familie gehoert zum Volk der Nama. Ausserdem hast du 10 Geschwister, darunter drei aeltere Brueder.'), nl,
     sleep(1),
-    write('Eines Tages kommt einer der Kolonialisten auf dich zu. Er erzählt dir, dass du aus den Minen rauskommst (in denen du seit deiner Kindheit arbeiten musst, um deine Familie zu versorgen), und du auf einer Krankenstation Menschen versorgen sollst.'), nl,
+    write('Eines Tages kommt einer der Kolonialisten auf dich zu. Er erzaehlt dir, dass du aus den Minen rauskommst (in denen du seit deiner Kindheit arbeiten musst, um deine Familie zu versorgen), und du auf einer Krankenstation Menschen versorgen sollst.'), nl,
     sleep(1),
     write('Du bist froh, dass du endlich aus den Minen rauskommst und freust dich auf die Arbeit in der Krankenstation.'), nl,
     sleep(1),
-    write('Als du bei der Krankenstation ankommst, triffst du auf zwei Kolonialisten, Rudolf und Albrecht. Sie leiden beide an Fieber und Übelkeit. Den Grund dafür kennst du nicht.'), nl,
+    write('Als du bei der Krankenstation ankommst, triffst du auf zwei Kolonialisten, Rudolf und Albrecht. Sie leiden beide an Fieber und Uebelkeit. Den Grund dafuer kennst du nicht.'), nl,
     sleep(1),
-    write('***Choice: Du hast mehrere Behandlungsmöglichkeiten. Welche wählst du?***'), nl,
+    write('***Choice: Du hast mehrere Behandlungsmoeglichkeiten. Welche waehlst du?***'), nl,
     sleep(1),
     write('a: Lege ihnen nasse, kalte Lappen auf die Stirn'), nl,
     sleep(1),
-    write('b: Du probierst eine alternative Behandlungsmögichkeit: Die Einflössung von zerdrücktem Kakao'), nl,
+    write('b: Du probierst eine alternative Behandlungsmoeglichkeit: Die Einflössung von zerdruecktem Kakao'), nl,
     sleep(1),
     write('c: Du versuchst es mit einer allseits bekannten Methode: Voodoo!'), nl,
     read_choice(Choice),
@@ -58,9 +58,9 @@ scene(niya_introduction) :-
 % Szene 2a: Rudolf und Albrecht bekommen einen nassen lappen auf die Stirn
 scene(niya_water_cloth) :-
     nl,
-    write('Du gibst beiden einen nassen, kalten Lappen auf die Stirn. Sie überleben beide und es geht ihnen im Laufe der naechsten Tage immer besser. '), nl,
+    write('Du gibst beiden einen nassen, kalten Lappen auf die Stirn. Sie ueberleben beide und es geht ihnen im Laufe der naechsten Tage immer besser. '), nl,
     sleep(1),
-    write('Eines Tages willst du gerade in die Krankenstation durch die offene Tuer gehen, du bekommst aber gerade noch rechtzeitig mit, dass Rudolf und Albrecht ein sehr interessantes Gespräch führen.'), nl,
+    write('Eines Tages willst du gerade in die Krankenstation durch die offene Tuer gehen, du bekommst aber gerade noch rechtzeitig mit, dass Rudolf und Albrecht ein sehr interessantes Gespraech fuehren.'), nl,
     sleep(1),
     write('Rudolf: du, Albrecht, ich glaub ich hab mich verliebt.'), nl,
     sleep(1),
@@ -70,22 +70,22 @@ scene(niya_water_cloth) :-
     sleep(1),
     write('Albrecht: Oh, das ist ja interessant. Ich glaube, sie steht auf dich.'), nl,
     sleep(1),
-    write('*Ach du Scheiße!*'), nl,
+    write('*Ach du Scheisse!*'), nl,
     sleep(1),
     write('***Choice: Wie reagierst du auf die Situation?***'), nl,
     sleep(1),
-    write('a: Du redest in einem ruhigen Moment mit Rudolf und gaukelst ihm Gefühle vor, um von ihm besser behandelt zu werden.'), nl,
+    write('a: Du redest in einem ruhigen Moment mit Rudolf und gaukelst ihm Gefuehle vor, um von ihm besser behandelt zu werden.'), nl,
     sleep(1),
     write('b: Du redest in einem ruhigen Moment mit Rudolf und lehnst ihn ab, da du auf einen Freund von dir aus der Mine stehst. '), nl,
     sleep(1),
-    write('c: Oh mein Gott! Du stehst auch auf ihn. Allerdings weisst du noch nicht so ganz, wie du mit deinen Gefühlen für ihn umgehen sollst ...'), nl,
+    write('c: Oh mein Gott! Du stehst auch auf ihn. Allerdings weisst du noch nicht so ganz, wie du mit deinen Gefuehlen fuer ihn umgehen sollst ...'), nl,
     read_choice(Choice),
-    handle_choice(niya_introduction, Choice).
+    handle_choice(niya_water_cloth, Choice).
 
-% Szene 2b: Rudolf und Albrecht bekommen zerdrückten Kakao eingeflößt
+% Szene 2b: Rudolf und Albrecht bekommen zerdrueckten Kakao eingefloesst
 scene(niya_crushed_cacao) :-
     nl,
-    write('Du flösst ihnen zerdrückten Kakao ein.'), nl,
+    write('Du floesst ihnen zerdrueckten Kakao ein.'), nl,
     sleep(1),
     write('Im Laufe der naechsten Tage geht es ihnen immer besser. Dir faellt auf, dass besonders Rudolf sehr nett zu dir ist.'), nl,
     sleep(1),
@@ -101,13 +101,13 @@ scene(niya_crushed_cacao) :-
     sleep(1),
     write('***Choice: Wie reagierst du auf die Situation?***'), nl,
     sleep(1),
-    write('a: Du redest mit Rudolf und gaukelst ihm Gefühle vor, um von ihm besser behandelt zu werden.'), nl,
+    write('a: Du redest mit Rudolf und gaukelst ihm Gefuehle vor, um von ihm besser behandelt zu werden.'), nl,
     sleep(1),
     write('b: Du redest mit Rudolf und lehnst ihn ab, da du auf einen Freund von dir aus der Mine stehst. '), nl,
     sleep(1),
-    write('c: Oh mein Gott! Du stehst auch auf ihn. Allerdings weisst du noch nicht so ganz, wie du mit deinen Gefühlen für ihn umgehen sollst ...'), nl,
+    write('c: Oh mein Gott! Du stehst auch auf ihn. Allerdings weisst du noch nicht so ganz, wie du mit deinen Gefuehlen fuer ihn umgehen sollst ...'), nl,
     read_choice(Choice),
-    handle_choice(niya_introduction, Choice).
+    handle_choice(niya_crushed_cacao, Choice).
 
 % Szene 2c: Rudolf und Albrecht bekommen Voodoo
 scene(niya_voodoo) :-
@@ -116,7 +116,7 @@ scene(niya_voodoo) :-
     sleep(1),
     write('Rudolf und Albrecht sterben beide. Du wirst von den anderen Kolonialisten beschuldigt, sie vergiftet zu haben.'), nl,
     sleep(1),
-    write('Du wirst in den Regenwald verbannt und musst dort alleine überleben.'), nl,
+    write('Du wirst in den Regenwald verbannt und musst dort alleine ueberleben.'), nl,
     finish.
 
 % Szene 3a: Sie tut so, als ob sie auf ihn steht
@@ -124,19 +124,20 @@ scene(niya_pretends_to_like_him) :-
     nl,
     write('Du stehst nicht wirklich auf ihn, tust aber so, damit Rudolf dich besser behandelt.'), nl,
     sleep(1),
-    write('Ihr beide seid ein anscheinend glückliches Paar (auch wenn ihr eure Beziehung geheimhalten müsst). Und Rudolf ist über beide Ohren verliebt in dich.'), nl,
+    write('Ihr beide seid ein anscheinend glueckliches Paar (auch wenn ihr eure Beziehung geheimhalten muesst). Und Rudolf ist ueber beide Ohren verliebt in dich.'), nl,
     sleep(1),
-    write('Eines Tages passiert etwas Schreckliches: Du musst wieder zurück in die Minen! Währenddessen wird Rudolf in den Krankenurlaub geschickt.'), nl,
+    write('Eines Tages passiert etwas Schreckliches: Du musst wieder zurueck in die Minen! Waehrenddessen wird Rudolf in den Krankenurlaub geschickt.'), nl,
     sleep(1),
     write('In den Minen triffst du auf deinen alten Schwarm.'), nl,
     sleep(1),
     write('***Choice: wie gehst du mit ihm um?***'), nl,
     sleep(1),
-    write('a: Du erzählst ihm nicht von deinen Gefühlen'), nl,
+    write('a: Du erzaehlst ihm nicht von deinen Gefuehlen'), nl,
     sleep(1),
-    write('b: Du erzählst ihm von deinen Gefühlen'), nl,
+    write('b: Du erzaehlst ihm von deinen Gefuehlen'), nl,
+    read_choice(Choice),
+    handle_choice(niya_pretends_to_like_him, Choice).
     
-
 % Szene 3b: Niya lehnt Rudolf ab, weil sie auf jemand anderen steht
 scene(niya_likes_another_guy) :-
     nl,
@@ -146,35 +147,35 @@ scene(niya_likes_another_guy) :-
     sleep(1),
     write('Was du nicht weisst, ist, dass das eine Luege war. Er findet in den naechsten Tagen heraus, wer dein Freund aus der Mine ist. Daraufhin erschiesst er ihn. '), nl,
     sleep(1),
-    write('Du bist am Boden zerstört. Am Tag nach dem Mord kommt Rudolf zu dir und bringt dich ebenfalls aus Liebeskummer um, denn wenn er dich nicht haben kann, soll dich keiner haben.'), nl,
+    write('Du bist am Boden zerstoert. Am Tag nach dem Mord kommt Rudolf zu dir und bringt dich ebenfalls aus Liebeskummer um, denn wenn er dich nicht haben kann, soll dich keiner haben.'), nl,
     finish.
 
 % Szene 3c: Niya liebt ihn
 scene(niya_loves_him) :-
     nl,
-    write('Oh mein Gott! Du stehst auch auf ihn. Allerdings weisst du noch nicht so ganz, wie du mit deinen Gefühlen für ihn umgehen sollst ...'), nl,
+    write('Oh mein Gott! Du stehst auch auf ihn. Allerdings weisst du noch nicht so ganz, wie du mit deinen Gefuehlen fuer ihn umgehen sollst ...'), nl,
     sleep(1),
-    write('Ab dem nächsten Tag wirst du durch Liebeskummer sehr traurig.'), nl,
+    write('Ab dem naechsten Tag wirst du durch Liebeskummer sehr traurig.'), nl,
     sleep(1),
     write('*Da wird sowieso nichts daraus. '), nl,
     sleep(1),
     write('Aus Liebeskummer ertraenkst du dich.'), nl,
     finish.
 
-% Szene 4a: Sie erzählt ihrem Schram nicht von ihren Gefühlen
+% Szene 4a: Sie erzaehlt ihrem Schram nicht von ihren Gefuehlen
 scene(niya_does_not_tell_him) :-
     nl,
-    write('Du erzaehlst ihm nicht von deinen Gefühlen.'), nl,
+    write('Du erzaehlst ihm nicht von deinen Gefuehlen.'), nl,
     sleep(1),
-    write('Sobald Rudolf von seinem Urlaub zurück ist, triffst du dich wieder mit ihm.'), nl,
+    write('Sobald Rudolf von seinem Urlaub zurueck ist, triffst du dich wieder mit ihm.'), nl,
     sleep(1),
     % scene(do_we_want_to_flee).
     finish.
 
-% Szene 4b: Sie erzählt ihrem Schwarm von ihren Gefühlen
+% Szene 4b: Sie erzählt ihrem Schwarm von ihren Gefuehlen
 scene(niya_tells_him) :-
     nl,
-    write('Du erzaehlst ihm von deinen Gefühlen.'), nl,
+    write('Du erzaehlst ihm von deinen Gefuehlen.'), nl,
     get_random_choice(Choice),
     handle_choice(does_he_like_her, Choice).
 
@@ -191,7 +192,7 @@ scene(he_does_not_like_her) :-
     nl,
     write('Er mag dich nicht.'), nl,
     sleep(1),
-    write('Sobald Rudolf von seinem Urlaub zurück ist, triffst du dich wieder mit ihm.'), nl,
+    write('Sobald Rudolf von seinem Urlaub zurueck ist, triffst du dich wieder mit ihm.'), nl,
     sleep(1),
     % scene(do_we_want_to_flee).
     finish.
@@ -214,7 +215,7 @@ handle_choice(niya_water_cloth, b) :-
 handle_choice(niya_water_cloth, c) :-
     scene(niya_loves_him).
 
-% Entscheidungen in der Szene "Rudolf und Albrecht bekommen zerdrückten Kakao eingeflößt"
+% Entscheidungen in der Szene "Rudolf und Albrecht bekommen zerdrueckten Kakao eingefloesst"
 handle_choice(niya_crushed_cacao, a) :-
     scene(niya_pretends_to_like_him).
 handle_choice(niya_crushed_cacao, b) :-
@@ -228,7 +229,7 @@ handle_choice(niya_pretends_to_like_him, a) :-
 handle_choice(niya_pretends_to_like_him, b) :-
     scene(niya_tells_him).
 
-% Entscheidungen in der Szene "Sie erzählt ihrem Schwarm von ihren Gefühlen"
+% Entscheidungen in der Szene "Sie erzaehlt ihrem Schwarm von ihren Gefuehlen"
 handle_choice(does_he_like_her, a) :-
     scene(he_likes_her).
 
