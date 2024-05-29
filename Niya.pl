@@ -171,7 +171,7 @@ scene(niya_does_not_tell_him) :-
     sleep(1),
     write('Sobald Rudolf von seinem Urlaub zurueck ist, triffst du dich wieder mit ihm.'), nl,
     sleep(1),
-    scene(do_we_want_to_flee).
+    scene(do_we_want_to_flee_rainforest).
     finish.
 
 % Szene 4b: Sie erzählt ihrem Schwarm von ihren Gefuehlen
@@ -196,13 +196,13 @@ scene(he_does_not_like_her) :-
     sleep(1),
     write('Sobald Rudolf von seinem Urlaub zurueck ist, triffst du dich wieder mit ihm.'), nl,
     sleep(1),
-    scene(do_we_want_to_flee).
+    scene(do_we_want_to_flee_rainforest).
     finish.
 
 % Szene 6: Rudolf asks Niya if they want to flee to the rainforest
 
 scene(do_we_want_to_flee_rainforest) :-
-    cls,
+    nl,
     write('Rudolf: Willst du mit mir in den Regenwald fluechten?'), nl, nl,
     sleep(1),
     write('***Choice: Was machst du?***'), nl,
@@ -230,7 +230,7 @@ scene(she_has_to_tell_him_something) :-
     sleep(1),
     write('Niya: Ich bin schwanger.'), nl,
     sleep(1),
-    write('Ihr fluechtet trotzdem gemeinsam in den Regenwald, aber sie stirbt und du musst das Kind alleine aufziehen.'), nl,
+    write('Ihr fluechtet trotzdem gemeinsam in den Regenwald, aber Niya stirbt und Rudolf musst das Kind alleine aufziehen.'), nl,
     finish.
 
 % Szene 7c: They break out of the military camp and she has to decide whether to take ship 1 or 2
