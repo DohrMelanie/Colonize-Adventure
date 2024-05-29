@@ -174,7 +174,7 @@ scene(niya_does_not_tell_him) :-
     scene(do_we_want_to_flee_rainforest).
     finish.
 
-% Szene 4b: Sie erzählt ihrem Schwarm von ihren Gefuehlen
+% Szene 4b: Sie erzaehlt ihrem Schwarm von ihren Gefuehlen
 scene(niya_tells_him) :-
     cls,
     write('Du erzaehlst ihm von deinen Gefuehlen.'), nl,
@@ -186,7 +186,7 @@ scene(he_likes_her) :-
     cls,
     write('Er mag dich auch.'), nl,
     sleep(1),
-    write('Ihr beide seid ein glueckliches Paar und fluechtet gemeinsam in den Regenwald. HAPPY END!'), nl,
+    write('Ihr beide seid ein glueckliches Paar und fluechtet gemeinsam in den Regenwald. HAPPY END :)'), nl,
     finish.
 
 % Szene 5b: Er mag sie nicht
@@ -203,6 +203,7 @@ scene(he_does_not_like_her) :-
 
 scene(do_we_want_to_flee_rainforest) :-
     nl,
+    write('Du triffst wieder auf Rudolf.'), nl,
     write('Rudolf: Willst du mit mir in den Regenwald fluechten?'), nl, nl,
     sleep(1),
     write('***Choice: Was machst du?***'), nl,
@@ -211,16 +212,16 @@ scene(do_we_want_to_flee_rainforest) :-
     sleep(1),
     write('b: Rudolf... ich muss dir noch etwas sagen ...'), nl,
     sleep(1),
-    write('c: Ja, ich will *ich liebe ihn nicht aber nur mit ihm entkomme ich*'), nl,
+    write('c: Ja, ich will *ich liebe ihn nicht, aber nur mit ihm habe ich eine Chance, zu entkommen!*'), nl,
     read_choice(Choice),
     handle_choice(do_we_want_to_flee_rainforest, Choice).
 
 % Szene 7a: She agrees because she really likes him now
 scene(she_really_likes_him) :-
     cls,
-    write('Niya: Ja, ich moechte mit dir fluechten. Ich stehe wirklich auf dich!'), nl,
+    write('Niya: Ja, ich moechte sehr gerne mit dir fluechten. Ich liebe dich! <3'), nl,
     sleep(1),
-    write('Ihr ueberlebt beide und lebt gluecklich bis ans Ende eurer Tage.'), nl,
+    write('Ihr ueberlebt beide und lebt gluecklich bis ans Ende eurer Tage. HAPPY END :)'), nl,
     finish.
 
 % Szene 7b: She has to tell him something important
@@ -230,7 +231,9 @@ scene(she_has_to_tell_him_something) :-
     sleep(1),
     write('Niya: Ich bin schwanger.'), nl,
     sleep(1),
-    write('Ihr fluechtet trotzdem gemeinsam in den Regenwald, aber Niya stirbt und Rudolf musst das Kind alleine aufziehen.'), nl,
+    write('Rudolf: Oh mein Gott! Ich freu mich ja so <3'), nl,
+    sleep(1),
+    write('Ihr fluechtet trotzdem gemeinsam in den Regenwald. Bei der Geburt des Kindes allerdings stirbst du, und Rudolf musst das Kind alleine aufziehen. :('), nl,
     finish.
 
 % Szene 7c: They break out of the military camp and she has to decide whether to take ship 1 or 2
@@ -238,15 +241,15 @@ scene(she_dont_like_him) :-
     cls,
     write('Ihr habt aus dem Militaerlager ausbrechen koennen.'), nl,
     sleep(1),
-    write('Nun seid ihr im Hafen von Namibia.'), nl,
+    write('In einem ruhigen Moment entwischt du Rudolf, und du rennst zum Hafen von Namibia, um aus Namibia zu entkommen.'), nl,
     sleep(1),
-    write('Da sind 2 Schiffe.'), nl, nl,
+    write('Du entdeckst zwei Schiffe, die beide so aussehen, als koenntest du unbemerkt an Bord gelangen.'), nl, nl,
     sleep(1),
     write('***Choice: Was machst du?***'), nl,
     sleep(1),
-    write('a: Nehme Schiff 1'), nl,
+    write('a: Nehme Schiff 1, ein rot lackiertes altes Segelschiff'), nl,
     sleep(1),
-    write('b: Nehme Schiff 2'), nl,
+    write('b: Nehme Schiff 2, ein moderneres Segelschiff mit hellblauen Waenden'), nl,
     read_choice(Choice),
     handle_choice(ship, Choice).
 
@@ -255,15 +258,15 @@ scene(ship_one) :-
     cls,
     write('Die Insassen des Schiffes entdecken dich.'), nl,
     sleep(1),
-    write('Du wirst ueber Bord geworfen.'), nl,
+    write('Du wirst ueber Bord geworfen :('), nl,
     finish.
 
-% Szene 8b: Ship two, they arent discovered and live happily ever after in Argentina
+% Szene 8b: Ship two, she doesnt get discovered and lives happily ever after in Argentina
 scene(ship_two) :-
     nl,
-    write('Ihr werdet nicht entdeckt und seid in Argentinien.'), nl,
+    write('Du wirst nicht entdeckt und landest in Argentinien.'), nl,
     sleep(1),
-    write('Ihr lebt gluecklich bis zum Ende eurer Tage.'), nl,
+    write('Du lebst gluecklich bis zum Ende deiner Tage. HAPPY END :)'), nl,
     finish.
 
 % *****************************Choice Handling******************************

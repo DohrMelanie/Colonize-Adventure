@@ -33,6 +33,8 @@ get_random_choice(Choice) :-
     ;   Rand = 3 -> Choice = c
     ).
 
+cls :- write('\e[2J').
+
 % *****************************Szenes******************************
 % Szene 1: Rudolf trifft auf Albrecht
 scene(rudolf_meets_albrecht) :-
@@ -49,18 +51,22 @@ scene(rudolf_meets_albrecht) :-
 
 % Szene 2a: Rudolf sagt ihm, dass er ein guter Freund ist
 scene(rudolf_tells_albrecht_that_he_is_a_good_friend) :-
-    nl,
-    write('Albrecht: Ich stehe auf dich'), nl,
+    cls,
+    write('Du: Albrecht, du bist ein guter Freund!'), nl,
     sleep(1),
-    write('*OMG*'), nl,
+    write('*Albrecht wird rot*'), nl,
+    sleep(1),
+    write('Albrecht: Ich aehh... Ich stehe auf dich!'), nl,
+    sleep(1),
+    write('*Oh mein Gott!*'), nl,
     write('Du: Ich stehe auch auf dich!'), nl,
     sleep(1),    
-    write('wir beschliesen gemeinsam in den Regenwald zu fluechten und lebten gluecklich bis ans Ende unserer Tage'), nl,
+    write('Albrecht und du beschliesst gemeinsam in den Regenwald zu fluechten. Ihr lebt gluecklich bis ans Ende unserer Tage'), nl,
     finish.
 
 % Szene 2b: Sie reden nur kurz miteinander
 scene(they_talk_with_each_other) :-
-    nl,
+    cls,
     write('Du: Hallo Albrecht, ich suche Niya, hast du sie wo gesehen?'), nl,
     sleep(1),
     write('Albrecht: Ja sie ist in ihrem Zelt'), nl,
@@ -73,26 +79,28 @@ scene(they_talk_with_each_other) :-
     sleep(1),
     write('Niya: Hi Rudolf!'), nl,
     sleep(1),
-    write('Du: Wollen wir gemeinsam fluechten?'),
+    write('Du: Ich hab eine Idee ... wollen wir gemeinsam fluechten?'),
     get_random_choice(Choice),
     handle_choice(do_we_want_to_flee, Choice).
 
 % Szene 3a: Sie sagt zu, da sie mittlerweile wirklich auf ihn steht
 scene(she_really_likes_him) :-
-    nl,
-    write('Niya: Ja, ich moechte mit dir fluechten. Ich stehe wirklich auf dich!'), nl,
+    cls,
+    write('Niya: Ja, ich moechte sehr gerne mit dir fluechten. Ich liebe dich! <3'), nl,
     sleep(1),
-    write('Ihr ueberlebt beide und lebt gluecklich bis ans Ende eurer Tage.'), nl,
+    write('Ihr ueberlebt beide und lebt gluecklich bis ans Ende eurer Tage. HAPPY END :)'), nl,
     finish.
 
 % Szene 3b: Sie muss ihm vorher noch etwas wichtiges sagen
 scene(she_has_to_tell_him_something) :-
-    nl,
+    cls,
     write('Niya: Ich muss dir vorher noch etwas Wichtiges sagen...'), nl,
     sleep(1),
     write('Niya: Ich bin schwanger.'), nl,
     sleep(1),
-    write('Ihr fluechtet trotzdem gemeinsam in den Regenwald, aber sie stirbt und du musst das Kind alleine aufziehen.'), nl,
+    write('Rudolf: Oh mein Gott! Ich freu mich ja so <3'), nl,
+    sleep(1),
+    write('Ihr fluechtet trotzdem gemeinsam in den Regenwald. Bei der Geburt des Kindes allerdings stirbst du, und Rudolf musst das Kind alleine aufziehen. :('), nl,
     finish.
 
 % Szene 3c: Sie hauen gemeinsam aus dem Militaerlager ab, sie steht nicht wirklich auf ihn
@@ -100,7 +108,7 @@ scene(she_does_not_like_him) :-
     nl,
     write('Niya: Ja, ich moechte mit dir fluechten.'), nl,
     sleep(1),
-    write('Ihr fluechtet gemeinsam aus dem Militaerlager, aber sie entkommt dir, weil sie nicht auf dich stehtund dich ausgenutzt hat und du hast ein gebrochenes Herz.'), nl,
+    write('Ihr fluechtet gemeinsam aus dem Militaerlager. Spaeter entkommt Niya dir. Anscheinend hat sie dich nur benutzt um fluechten zu koennen. Du hast ein gebrochenes Herz :('), nl,
     finish.
 
 % *****************************Choice Handling******************************
