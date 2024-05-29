@@ -45,13 +45,13 @@ scene(niya_introduction) :-
     sleep(1),
     write('Du bist froh, dass du endlich aus den Minen rauskommst und freust dich auf die Arbeit in der Krankenstation.'), nl,
     sleep(1),
-    write('Als du bei der Krankenstation ankommst, triffst du auf zwei Kolonialisten, Rudolf und Albrecht. Sie leiden beide an Fieber und Uebelkeit. Den Grund dafuer kennst du nicht.'), nl,
+    write('Als du bei der Krankenstation ankommst, triffst du auf zwei Kolonialisten, Rudolf und Albrecht. Sie leiden beide an Fieber und Uebelkeit. Den Grund dafuer kennst du nicht.'), nl, nl,
     sleep(1),
     write('***Choice: Du hast mehrere Behandlungsmoeglichkeiten. Welche waehlst du?***'), nl,
     sleep(1),
     write('a: Lege ihnen nasse, kalte Lappen auf die Stirn'), nl,
     sleep(1),
-    write('b: Du probierst eine alternative Behandlungsmoeglichkeit: Die Einflössung von zerdruecktem Kakao'), nl,
+    write('b: Du probierst eine alternative Behandlungsmoeglichkeit: Die Einfloessung von zerdruecktem Kakao'), nl,
     sleep(1),
     write('c: Du versuchst es mit einer allseits bekannten Methode: Voodoo!'), nl,
     read_choice(Choice),
@@ -72,7 +72,7 @@ scene(niya_water_cloth) :-
     sleep(1),
     write('Albrecht: Oh, das ist ja interessant. Ich glaube, sie steht auf dich.'), nl,
     sleep(1),
-    write('*Ach du Scheisse!*'), nl,
+    write('*Ach du Scheisse!*'), nl, nl,
     sleep(1),
     write('***Choice: Wie reagierst du auf die Situation?***'), nl,
     sleep(1),
@@ -101,7 +101,7 @@ scene(niya_crushed_cacao) :-
     sleep(1),
     write('*ACH DU HEILIGE SCHEISSE!*'), nl,
     sleep(1),
-    write('***Choice: Wie reagierst du auf die Situation?***'), nl,
+    write('***Choice: Wie reagierst du auf die Situation?***'), nl, nl,
     sleep(1),
     write('a: Du redest mit Rudolf und gaukelst ihm Gefuehle vor, um von ihm besser behandelt zu werden.'), nl,
     sleep(1),
@@ -130,7 +130,7 @@ scene(niya_pretends_to_like_him) :-
     sleep(1),
     write('Eines Tages passiert etwas Schreckliches: Du musst wieder zurueck in die Minen! Waehrenddessen wird Rudolf in den Krankenurlaub geschickt.'), nl,
     sleep(1),
-    write('In den Minen triffst du auf deinen alten Schwarm.'), nl,
+    write('In den Minen triffst du auf deinen alten Schwarm.'), nl, nl,
     sleep(1),
     write('***Choice: wie gehst du mit ihm um?***'), nl,
     sleep(1),
@@ -171,7 +171,7 @@ scene(niya_does_not_tell_him) :-
     sleep(1),
     write('Sobald Rudolf von seinem Urlaub zurueck ist, triffst du dich wieder mit ihm.'), nl,
     sleep(1),
-    % scene(do_we_want_to_flee).
+    scene(do_we_want_to_flee).
     finish.
 
 % Szene 4b: Sie erzählt ihrem Schwarm von ihren Gefuehlen
@@ -196,7 +196,74 @@ scene(he_does_not_like_her) :-
     sleep(1),
     write('Sobald Rudolf von seinem Urlaub zurueck ist, triffst du dich wieder mit ihm.'), nl,
     sleep(1),
-    % scene(do_we_want_to_flee).
+    scene(do_we_want_to_flee).
+    finish.
+
+% Szene 6: Rudolf asks Niya if they want to flee to the rainforest
+
+scene(do_we_want_to_flee_rainforest) :-
+    cls,
+    write('Rudolf: Willst du mit mir in den Regenwald fluechten?'), nl, nl,
+    sleep(1),
+    write('***Choice: Was machst du?***'), nl,
+    sleep(1),
+    write('a: Ja, ich will *ich liebe ihn wirklich*'), nl,
+    sleep(1),
+    write('b: Rudolf... ich muss dir noch etwas sagen ...'), nl,
+    sleep(1),
+    write('c: Ja, ich will *ich liebe ihn nicht aber nur mit ihm entkomme ich*'), nl,
+    read_choice(Choice),
+    handle_choice(do_we_want_to_flee_rainforest, Choice).
+
+% Szene 7a: She agrees because she really likes him now
+scene(she_really_likes_him) :-
+    cls,
+    write('Niya: Ja, ich moechte mit dir fluechten. Ich stehe wirklich auf dich!'), nl,
+    sleep(1),
+    write('Ihr ueberlebt beide und lebt gluecklich bis ans Ende eurer Tage.'), nl,
+    finish.
+
+% Szene 7b: She has to tell him something important
+scene(she_has_to_tell_him_something) :-
+    cls,
+    write('Niya: Ich muss dir vorher noch etwas Wichtiges sagen...'), nl,
+    sleep(1),
+    write('Niya: Ich bin schwanger.'), nl,
+    sleep(1),
+    write('Ihr fluechtet trotzdem gemeinsam in den Regenwald, aber sie stirbt und du musst das Kind alleine aufziehen.'), nl,
+    finish.
+
+% Szene 7c: They break out of the military camp and she has to decide whether to take ship 1 or 2
+scene(she_dont_like_him) :-
+    cls,
+    write('Ihr habt aus dem Militaerlager ausbrechen koennen.'), nl,
+    sleep(1),
+    write('Nun seid ihr im Hafen von Namibia.'), nl,
+    sleep(1),
+    write('Da sind 2 Schiffe.'), nl, nl,
+    sleep(1),
+    write('***Choice: Was machst du?***'), nl,
+    sleep(1),
+    write('a: Nehme Schiff 1'), nl,
+    sleep(1),
+    write('b: Nehme Schiff 2'), nl,
+    read_choice(Choice),
+    handle_choice(ship, Choice).
+
+% Szene 8a: Ship one, she gets discovered by the passengers and thrown overboard with racist insults
+scene(ship_one) :-
+    cls,
+    write('Die Insassen des Schiffes entdecken dich.'), nl,
+    sleep(1),
+    write('Du wirst ueber Bord geworfen.'), nl,
+    finish.
+
+% Szene 8b: Ship two, they arent discovered and live happily ever after in Argentina
+scene(ship_two) :-
+    nl,
+    write('Ihr werdet nicht entdeckt und seid in Argentinien.'), nl,
+    sleep(1),
+    write('Ihr lebt gluecklich bis zum Ende eurer Tage.'), nl,
     finish.
 
 % *****************************Choice Handling******************************
@@ -237,3 +304,14 @@ handle_choice(does_he_like_her, a) :-
 
 handle_choice(does_he_like_her, b) :-
     scene(he_does_not_like_her).
+
+handle_choice(do_we_want_to_flee_rainforest, a) :-
+    scene(she_really_likes_him).
+handle_choice(do_we_want_to_flee_rainforest, b) :-
+    scene(she_has_to_tell_him_something).
+handle_choice(do_we_want_to_flee_rainforest, c) :-
+    scene(she_dont_like_him).
+handle_choice(ship, a) :-
+    scene(ship_one).
+handle_choice(ship, b) :-
+    scene(ship_two).
