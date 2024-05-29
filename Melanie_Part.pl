@@ -33,6 +33,8 @@ get_random_choice(Choice) :-
     ;   Rand = 3 -> Choice = c
     ).
 
+cls :- write('\e[2J').
+
 % *****************************Szenes******************************
 % Szene 1: Niya trifft auf Rudolf und Albrecht
 scene(niya_introduction) :-
@@ -57,7 +59,7 @@ scene(niya_introduction) :-
 
 % Szene 2a: Rudolf und Albrecht bekommen einen nassen lappen auf die Stirn
 scene(niya_water_cloth) :-
-    nl,
+    cls,
     write('Du gibst beiden einen nassen, kalten Lappen auf die Stirn. Sie ueberleben beide und es geht ihnen im Laufe der naechsten Tage immer besser. '), nl,
     sleep(1),
     write('Eines Tages willst du gerade in die Krankenstation durch die offene Tuer gehen, du bekommst aber gerade noch rechtzeitig mit, dass Rudolf und Albrecht ein sehr interessantes Gespraech fuehren.'), nl,
@@ -84,7 +86,7 @@ scene(niya_water_cloth) :-
 
 % Szene 2b: Rudolf und Albrecht bekommen zerdrueckten Kakao eingefloesst
 scene(niya_crushed_cacao) :-
-    nl,
+    cls,
     write('Du floesst ihnen zerdrueckten Kakao ein.'), nl,
     sleep(1),
     write('Im Laufe der naechsten Tage geht es ihnen immer besser. Dir faellt auf, dass besonders Rudolf sehr nett zu dir ist.'), nl,
@@ -111,7 +113,7 @@ scene(niya_crushed_cacao) :-
 
 % Szene 2c: Rudolf und Albrecht bekommen Voodoo
 scene(niya_voodoo) :-
-    nl,
+    cls,
     write('Du versuchst es mit einer allseits bekannten Methode: Voodoo!'), nl,
     sleep(1),
     write('Rudolf und Albrecht sterben beide. Du wirst von den anderen Kolonialisten beschuldigt, sie vergiftet zu haben.'), nl,
@@ -121,7 +123,7 @@ scene(niya_voodoo) :-
 
 % Szene 3a: Sie tut so, als ob sie auf ihn steht
 scene(niya_pretends_to_like_him) :-
-    nl,
+    cls,
     write('Du stehst nicht wirklich auf ihn, tust aber so, damit Rudolf dich besser behandelt.'), nl,
     sleep(1),
     write('Ihr beide seid ein anscheinend glueckliches Paar (auch wenn ihr eure Beziehung geheimhalten muesst). Und Rudolf ist ueber beide Ohren verliebt in dich.'), nl,
@@ -140,7 +142,7 @@ scene(niya_pretends_to_like_him) :-
     
 % Szene 3b: Niya lehnt Rudolf ab, weil sie auf jemand anderen steht
 scene(niya_likes_another_guy) :-
-    nl,
+    cls,
     write('Niya: Rudolf, ich mag dich wirklich sehr, aber ich stehe auf jemand anderen.'), nl,
     sleep(1),
     write('Rudolf: Oh, das ist schade. Aber ich verstehe das.'), nl,
@@ -152,7 +154,7 @@ scene(niya_likes_another_guy) :-
 
 % Szene 3c: Niya liebt ihn
 scene(niya_loves_him) :-
-    nl,
+    cls,
     write('Oh mein Gott! Du stehst auch auf ihn. Allerdings weisst du noch nicht so ganz, wie du mit deinen Gefuehlen fuer ihn umgehen sollst ...'), nl,
     sleep(1),
     write('Ab dem naechsten Tag wirst du durch Liebeskummer sehr traurig.'), nl,
@@ -164,7 +166,7 @@ scene(niya_loves_him) :-
 
 % Szene 4a: Sie erzaehlt ihrem Schram nicht von ihren Gefuehlen
 scene(niya_does_not_tell_him) :-
-    nl,
+    cls,
     write('Du erzaehlst ihm nicht von deinen Gefuehlen.'), nl,
     sleep(1),
     write('Sobald Rudolf von seinem Urlaub zurueck ist, triffst du dich wieder mit ihm.'), nl,
@@ -174,14 +176,14 @@ scene(niya_does_not_tell_him) :-
 
 % Szene 4b: Sie erzählt ihrem Schwarm von ihren Gefuehlen
 scene(niya_tells_him) :-
-    nl,
+    cls,
     write('Du erzaehlst ihm von deinen Gefuehlen.'), nl,
     get_random_choice(Choice),
     handle_choice(does_he_like_her, Choice).
 
 % Szene 5a: Er mag sie
 scene(he_likes_her) :-
-    nl,
+    cls,
     write('Er mag dich auch.'), nl,
     sleep(1),
     write('Ihr beide seid ein glueckliches Paar und fluechtet gemeinsam in den Regenwald. HAPPY END!'), nl,
@@ -189,7 +191,7 @@ scene(he_likes_her) :-
 
 % Szene 5b: Er mag sie nicht
 scene(he_does_not_like_her) :-
-    nl,
+    cls,
     write('Er mag dich nicht.'), nl,
     sleep(1),
     write('Sobald Rudolf von seinem Urlaub zurueck ist, triffst du dich wieder mit ihm.'), nl,
