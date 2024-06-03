@@ -202,9 +202,9 @@ scene(he_does_not_like_her) :-
 scene(do_we_want_to_flee_rainforest) :-
     nl,
     write('Du triffst wieder auf Rudolf. Er sieht dich ernst an und nach einem kurzen Moment der Stille spricht er endlich:'), nl,
-    write('Rudolf: "Niya, ich kann es hier nicht mehr ertragen. Diese Grausamkeit, diese Ungerechtigkeit. Ich möchte mit dir in den Regenwald fliehen. Dort könnten wir frei sein, fernab von all dem hier."'), nl,
+    write('Rudolf: "Niya, ich kann es hier nicht mehr ertragen. Diese Grausamkeit, diese Ungerechtigkeit. Ich muechte mit dir in den Regenwald fliehen. Dort kuennten wir frei sein, fernab von all dem hier."'), nl,
     sleep(1),
-    write('Du bist überrascht von seinem Vorschlag und weißt nicht, wie du reagieren sollst. Einerseits könntest du dem Albtraum entkommen, andererseits hast du Angst vor der Ungewissheit.'), nl, nl,
+    write('Du bist ueberrascht von seinem Vorschlag und weisst nicht, wie du reagieren sollst. Einerseits kuenntest du dem Albtraum entkommen, andererseits hast du Angst vor der Ungewissheit.'), nl, nl,
     sleep(1),
     write('***Choice: Was machst du?***'), nl,
     sleep(1),
@@ -221,27 +221,27 @@ scene(she_really_likes_him) :-
     cls,
     write('Niya: "Ja, ich moechte sehr gerne mit dir fluechten. Ich liebe dich! <3"'), nl,
     sleep(1),
-    write('Rudolf lächelt und nimmt deine Hand. Ihr flieht gemeinsam in den tiefen Regenwald, fernab von der grausamen Realität, die euch bisher gefangen hielt.'), nl,
+    write('Rudolf laechelt und nimmt deine Hand. Ihr flieht gemeinsam in den tiefen Regenwald, fernab von der grausamen Realitaet, die euch bisher gefangen hielt.'), nl,
     sleep(1),
-    write('Die Zeit vergeht, und ihr beide baut euch ein neues Leben auf. Ihr entdeckt die Schönheit der Natur und genießt jede Sekunde eurer neuen Freiheit. Mit der Zeit wird eure Liebe immer stärker.'), nl,
+    write('Die Zeit vergeht, und ihr beide baut euch ein neues Leben auf. Ihr entdeckt die Schuenheit der Natur und geniesst jede Sekunde eurer neuen Freiheit. Mit der Zeit wird eure Liebe immer staerker.'), nl,
     sleep(1),
-    write('Ihr überlebt beide und lebt glücklich bis ans Ende eurer Tage. HAPPY END :)'), nl,
+    write('Ihr ueberlebt beide und lebt gluecklich bis ans Ende eurer Tage. HAPPY END :)'), nl,
     finish.
 
 % Szene 7b: She has to tell him something important
 scene(she_has_to_tell_him_something) :-
     cls,
-    write('Niya: "Rudolf, bevor wir flüchten, muss ich dir noch etwas Wichtiges sagen..."'), nl,
+    write('Niya: "Rudolf, bevor wir fluechten, muss ich dir noch etwas Wichtiges sagen..."'), nl,
     sleep(1),
     write('Du nimmst einen tiefen Atemzug und schaust ihm in die Augen:'), nl,
     write('Niya: "Ich bin schwanger."'), nl,
     sleep(1),
-    write('Rudolfs Augen weiten sich vor Überraschung, doch dann breitet sich ein breites Lächeln auf seinem Gesicht aus.'), nl,
+    write('Rudolfs Augen weiten sich vor ueberraschung, doch dann breitet sich ein breites Laecheln auf seinem Gesicht aus.'), nl,
     write('Rudolf: "Oh mein Gott! Ich freue mich ja so <3"'), nl,
     sleep(1),
-    write('Ihr entscheidet euch trotzdem, gemeinsam in den Regenwald zu flüchten. Die Flucht ist anstrengend und gefährlich, aber eure Liebe und die Aussicht auf ein neues Leben geben euch Kraft.'), nl,
+    write('Ihr entscheidet euch trotzdem, gemeinsam in den Regenwald zu fluechten. Die Flucht ist anstrengend und gefaehrlich, aber eure Liebe und die Aussicht auf ein neues Leben geben euch Kraft.'), nl,
     sleep(1),
-    write('Doch die Strapazen der Flucht und die Geburt des Kindes fordern ihren Tribut. Du stirbst bei der Geburt, und Rudolf bleibt mit eurem Kind allein zurück. Er schwört, es in deinem Andenken großzuziehen und ihm eine bessere Zukunft zu ermöglichen. :('), nl,
+    write('Doch die Strapazen der Flucht und die Geburt des Kindes fordern ihren Tribut. Du stirbst bei der Geburt, und Rudolf bleibt mit eurem Kind allein zurueck. Er schwuert, es in deinem Andenken grosszuziehen und ihm eine bessere Zukunft zu ermueglichen. :('), nl,
     finish.
 
 % Szene 7c: They break out of the military camp and she has to decide whether to take ship 1 or 2
@@ -251,7 +251,7 @@ scene(she_dont_like_him) :-
     sleep(1),
     write('In einem ruhigen Moment nutzt du die Gelegenheit, um Rudolf zu entkommen. Du rennst so schnell du kannst zum Hafen von Namibia, in der Hoffnung, ein Schiff zu finden, das dich in die Freiheit bringt.'), nl,
     sleep(1),
-    write('Am Hafen angekommen, siehst du zwei Schiffe, die bereit zum Ablegen sind. Beide sehen so aus, als könntest du unbemerkt an Bord gelangen.'), nl, nl,
+    write('Am Hafen angekommen, siehst du zwei Schiffe, die bereit zum Ablegen sind. Beide sehen so aus, als kuenntest du unbemerkt an Bord gelangen.'), nl, nl,
     sleep(1),
     write('***Choice: Was machst du?***'), nl,
     sleep(1),
@@ -264,21 +264,21 @@ scene(she_dont_like_him) :-
 % Szene 8a: Ship one, she gets discovered by the passengers and thrown overboard with racist insults
 scene(ship_one) :-
     cls,
-    write('Du entscheidest dich für Schiff 1, ein rot lackiertes altes Segelschiff. Du schleichst dich an Bord und versteckst dich im Frachtraum. Die Stunden vergehen und du denkst, du bist in Sicherheit.'), nl,
+    write('Du entscheidest dich fuer Schiff 1, ein rot lackiertes altes Segelschiff. Du schleichst dich an Bord und versteckst dich im Frachtraum. Die Stunden vergehen und du denkst, du bist in Sicherheit.'), nl,
     sleep(1),
-    write('Doch eines Nachts, als du dich unvorsichtig bewegst, wirst du von einem der Matrosen entdeckt. Er schlägt Alarm, und bald bist du von wütenden Besatzungsmitgliedern umzingelt.'), nl,
+    write('Doch eines Nachts, als du dich unvorsichtig bewegst, wirst du von einem der Matrosen entdeckt. Er schlaegt Alarm, und bald bist du von wuetenden Besatzungsmitgliedern umzingelt.'), nl,
     sleep(1),
-    write('Sie schreien dich an, beschimpfen dich mit rassistischen Beleidigungen und zerren dich schließlich gewaltsam an Deck. Ohne ein weiteres Wort wirst du über Bord geworfen. Die kalten Wellen des Ozeans verschlingen dich, und dein Schicksal ist besiegelt. :('), nl,
+    write('Sie schreien dich an, beschimpfen dich mit rassistischen Beleidigungen und zerren dich schliesslich gewaltsam an Deck. Ohne ein weiteres Wort wirst du ueber Bord geworfen. Die kalten Wellen des Ozeans verschlingen dich, und dein Schicksal ist besiegelt. :('), nl,
     finish.
 
 % Szene 8b: Ship two, she doesnt get discovered and lives happily ever after in Argentina
 scene(ship_two) :-
     nl,
-    write('Du entscheidest dich für Schiff 2, ein moderneres Segelschiff mit hellblauen Wänden. Du schleichst dich an Bord und findest ein Versteck in einem unbenutzten Raum tief im Inneren des Schiffes.'), nl,
+    write('Du entscheidest dich fuer Schiff 2, ein moderneres Segelschiff mit hellblauen Waenden. Du schleichst dich an Bord und findest ein Versteck in einem unbenutzten Raum tief im Inneren des Schiffes.'), nl,
     sleep(1),
-    write('Die Reise ist lang und anstrengend, doch du wirst nicht entdeckt. Du überlebst von den wenigen Vorräten, die du mitgenommen hast und hörst hin und wieder Gespräche der Besatzung, die dir Hoffnung geben, dass das Ziel in greifbarer Nähe ist.'), nl,
+    write('Die Reise ist lang und anstrengend, doch du wirst nicht entdeckt. Du ueberlebst von den wenigen Vorraeten, die du mitgenommen hast und huerst hin und wieder Gespraeche der Besatzung, die dir Hoffnung geben, dass das Ziel in greifbarer Naehe ist.'), nl,
     sleep(1),
-    write('Nach Wochen auf See legst du endlich in Argentinien an. Du verlässt das Schiff unbemerkt und betrittst das Land, das dir eine neue Chance auf ein besseres Leben bietet. In Argentinien findest du Arbeit und baust dir ein neues Leben auf. Du lebst glücklich bis zum Ende deiner Tage. HAPPY END.'), nl,
+    write('Nach Wochen auf See legst du endlich in Argentinien an. Du verlaesst das Schiff unbemerkt und betrittst das Land, das dir eine neue Chance auf ein besseres Leben bietet. In Argentinien findest du Arbeit und baust dir ein neues Leben auf. Du lebst gluecklich bis zum Ende deiner Tage. HAPPY END.'), nl,
     finish.
 
 

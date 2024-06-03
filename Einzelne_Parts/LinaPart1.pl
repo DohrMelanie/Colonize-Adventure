@@ -39,13 +39,13 @@ cls :- write('\e[2J').
 % Szene 1: Rudolf trifft auf Albrecht
 scene(rudolf_meets_albrecht) :-
     nl,
-    write('*du triffst auf Albrecht*'), nl,
-    sleep(1),
+    write('*Du durchquerst das Lager, ein Ort voller Unruhe und gemischter Gefuehle. Die tropische Hitze drueckt schwer auf deine Schultern, als du Albrecht siehst, der gerade dabei ist, seine Ausruestung zu sortieren. Deine Gedanken rasen. Albrecht war immer ein treuer Kamerad in dieser unwirtlichen Umgebung, aber nun suchst du verzweifelt nach Niya.*'), nl,
+    sleep(2),
     write('***Choice: Was machst du?***'), nl,
     sleep(1),
-    write('a: sage Albrecht, dass er ein guter Freund ist'), nl,
+    write('a: Sage Albrecht, dass er ein guter Freund ist'), nl,
     sleep(1),
-    write('b: fuehre smalltalk, erzaehle dass du nach Niya suchst'), nl,
+    write('b: Fuehre Smalltalk, erzaehle dass du nach Niya suchst'), nl,
     read_choice(Choice),
     handle_choice(rudolf_meets_albrecht, Choice).
 
@@ -54,62 +54,82 @@ scene(rudolf_tells_albrecht_that_he_is_a_good_friend) :-
     cls,
     write('Du: Albrecht, du bist ein guter Freund!'), nl,
     sleep(1),
-    write('*Albrecht wird rot*'), nl,
-    sleep(1),
+    write('*Albrecht wird rot und schaut verlegen zu Boden. Du spuerst eine unerwartete Spannung in der Luft, die ueber die uebliche Kameradschaft hinausgeht.*'), nl,
+    sleep(2),
     write('Albrecht: Ich aehh... Ich stehe auf dich!'), nl,
     sleep(1),
-    write('*Oh mein Gott!*'), nl,
+    write('*Dein Herz schlaegt schneller. Diese unerwartete Offenbarung laesst dich stocken. In dieser rauen, fremden Welt haettest du nie gedacht, dass solch zarte Gefuehle entstehen koennten.*'), nl,
+    sleep(2),
     write('Du: Ich stehe auch auf dich!'), nl,
     sleep(1),    
-    write('Albrecht und du beschliesst gemeinsam in den Regenwald zu fluechten. Ihr lebt gluecklich bis ans Ende unserer Tage'), nl,
+    write('*Albrechts Augen leuchten auf, und ohne ein weiteres Wort zu verlieren, nehmt ihr euch bei den Haenden und beschliesst, gemeinsam in den Regenwald zu fluechten. Ihr verlasst das Chaos und die Gewalt des Lagers und findet Frieden in der Wildnis, wo ihr gluecklich bis ans Ende eurer Tage lebt.*'), nl,
     finish.
 
 % Szene 2b: Sie reden nur kurz miteinander
 scene(they_talk_with_each_other) :-
     cls,
-    write('Du: Hallo Albrecht, ich suche Niya, hast du sie wo gesehen?'), nl,
+    write('*Du gehst auf Albrecht zu und versuchst, moeglichst ruhig zu wirken, obwohl die Sorge um Niya dich innerlich zerreisst. Diese Kolonie, mit all ihren Gefahren und Herausforderungen, hat dich gelehrt, deine Emotionen zu verbergen.*'), nl,
     sleep(1),
-    write('Albrecht: Ja sie ist in ihrem Zelt'), nl,
+    write('Du: Hallo Albrecht, ich suche Niya. Hast du sie irgendwo gesehen?'), nl,
+    sleep(2),
+    write('Albrecht: Ja, sie ist in ihrem Zelt. Warum suchst du sie?'), nl,
+    sleep(2),
+    write('Du: Danke! Ich muss dringend mit ihr sprechen.'), nl,
     sleep(1),
-    write('Du: Danke!'), nl,
+    write('*Du verabschiedest dich hastig und machst dich auf den Weg zu Niya. Deine Gedanken kreisen um die letzten Wochen. Niya, die Sklavin, die dein Herz beruehrt hat, war mehr als nur eine Dienerin. Sie war eine Seele, die du retten wolltest.*'), nl, nl,
     sleep(1),
-    write('*du gehst zu Niya*'), nl, nl,
-    sleep(1),
+    write('*Im Zelt angekommen, findest du Niya, die gerade dabei ist, ihre Sachen zu packen. Ihre Augen weiten sich ueberrascht, als sie dich sieht.*'), nl,
+    sleep(2),
     write('Du: Hi Niya!'), nl,
     sleep(1),
-    write('Niya: Hi Rudolf!'), nl,
+    write('Niya: Hi Rudolf! Was gibt\'s?'), nl,
     sleep(1),
-    write('Du: Ich hab eine Idee ... wollen wir gemeinsam fluechten?'),
+    write('Du: Ich hab eine Idee ... wollen wir gemeinsam fluechten?'), nl,
     get_random_choice(Choice),
     handle_choice(do_we_want_to_flee, Choice).
 
 % Szene 3a: Sie sagt zu, da sie mittlerweile wirklich auf ihn steht
 scene(she_really_likes_him) :-
     cls,
-    write('Niya: Ja, ich moechte sehr gerne mit dir fluechten. Ich liebe dich! <3'), nl,
+    write('*Niya schaut dich an, und du siehst, wie sich ein sanftes Laecheln auf ihrem Gesicht ausbreitet. Ihre Augen, die oft Schmerz und Trauer spiegeln, leuchten nun voller Hoffnung und Zuneigung.*'), nl,
     sleep(1),
+    write('Niya: Ja, ich moechte sehr gerne mit dir fluechten. Ich liebe dich! <3'), nl,
+    sleep(2),
+    write('*Euer Herzschlag synchronisiert sich, als ihr euch umarmt. Ihr wisst, dass ihr zusammen alles schaffen koennt. Ihr verlasst das Militaerlager, das Symbol der Unterdrueckung und Angst, und findet Zuflucht im dichten Gruen des Regenwaldes. Dort baut ihr euch ein neues Leben auf, fernab von den Schrecken der Vergangenheit.*'), nl,
+    sleep(2),
     write('Ihr ueberlebt beide und lebt gluecklich bis ans Ende eurer Tage. HAPPY END :)'), nl,
     finish.
 
-% Szene 3b: Sie muss ihm vorher noch etwas wichtiges sagen
+% Szene 3b: Sie muss ihm vorher noch etwas Wichtiges sagen
 scene(she_has_to_tell_him_something) :-
     cls,
-    write('Niya: Ich muss dir vorher noch etwas Wichtiges sagen...'), nl,
+    write('*Niya schaut dich mit ernster Miene an und atmet tief durch. Ihr Gesicht, von den Jahren der Unterdrueckung und des Leids gezeichnet, zeigt einen Ausdruck der Unsicherheit.*'), nl,
     sleep(1),
+    write('Niya: Ich muss dir vorher noch etwas Wichtiges sagen...'), nl,
+    sleep(2),
     write('Niya: Ich bin schwanger.'), nl,
     sleep(1),
+    write('*Die Worte treffen dich unerwartet, und fuer einen Moment weisst du nicht, was du sagen sollst. Deine Gedanken wirbeln durcheinander, aber du fuehlst auch eine tiefe Freude.*'), nl,
+    sleep(2),
     write('Rudolf: Oh mein Gott! Ich freu mich ja so <3'), nl,
     sleep(1),
-    write('Ihr fluechtet trotzdem gemeinsam in den Regenwald. Bei der Geburt des Kindes allerdings stirbst du, und Rudolf musst das Kind alleine aufziehen. :('), nl,
+    write('*Ihr fluechtet trotzdem gemeinsam in den Regenwald, voller Hoffnung und Vorfreude. Doch das Schicksal ist grausam. Bei der Geburt des Kindes stirbt Niya, und du musst das Kind alleine aufziehen. Der Schmerz ueber ihren Verlust ist unermesslich, aber die Liebe zu eurem Kind gibt dir die Kraft, weiterzumachen.*'), nl,
     finish.
 
 % Szene 3c: Sie hauen gemeinsam aus dem Militaerlager ab, sie steht nicht wirklich auf ihn
 scene(she_does_not_like_him) :-
     nl,
-    write('Niya: Ja, ich moechte mit dir fluechten.'), nl,
+    write('*Niya nickt entschlossen, aber du siehst ein Zoegern in ihren Augen. Etwas stimmt nicht, doch du verdraengst deine Zweifel. Die Hoffnung auf ein gemeinsames Leben ist zu stark.*'), nl,
     sleep(1),
-    write('Ihr fluechtet gemeinsam aus dem Militaerlager. Spaeter entkommt Niya dir. Anscheinend hat sie dich nur benutzt um fluechten zu koennen. Du hast ein gebrochenes Herz :('), nl,
+    write('Niya: Ja, ich moechte mit dir fluechten.'), nl,
+    sleep(2),
+    write('*Ihr fluechtet gemeinsam aus dem Militaerlager, aber die Reise ist hart und entbehrungsreich. Bald merkst du, dass etwas nicht stimmt. Niya wirkt abwesend und distanziert.*'), nl,
+    sleep(2),
+    write('Niya: Es tut mir leid, Rudolf, aber ich kann das nicht. Ich... ich habe jemanden anders getroffen.'), nl,
+    sleep(2),
+    write('*Ihr Gestaendnis trifft dich wie ein Schlag. Niya verlaesst dich, und du bleibst mit einem gebrochenen Herzen zurueck. Die Erkenntnis, dass sie dich nur benutzt hat, um zu entkommen, laesst einen bitteren Geschmack in deinem Mund zurueck. Der Traum von einem gemeinsamen Leben zerbricht, und du kehrst in die Einsamkeit zurueck.*'), nl,
     finish.
+
 
 % *****************************Choice Handling******************************
 % Entscheidungen in der Szene "Rudolf trifft auf Albrecht"
