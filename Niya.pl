@@ -198,13 +198,13 @@ scene(he_does_not_like_her) :-
     sleep(1),
     scene(do_we_want_to_flee_rainforest).
     finish.
-
 % Szene 6: Rudolf asks Niya if they want to flee to the rainforest
-
 scene(do_we_want_to_flee_rainforest) :-
     nl,
-    write('Du triffst wieder auf Rudolf.'), nl,
-    write('Rudolf: Willst du mit mir in den Regenwald fluechten?'), nl, nl,
+    write('Du triffst wieder auf Rudolf. Er sieht dich ernst an und nach einem kurzen Moment der Stille spricht er endlich:'), nl,
+    write('Rudolf: "Niya, ich kann es hier nicht mehr ertragen. Diese Grausamkeit, diese Ungerechtigkeit. Ich möchte mit dir in den Regenwald fliehen. Dort könnten wir frei sein, fernab von all dem hier."'), nl,
+    sleep(1),
+    write('Du bist überrascht von seinem Vorschlag und weißt nicht, wie du reagieren sollst. Einerseits könntest du dem Albtraum entkommen, andererseits hast du Angst vor der Ungewissheit.'), nl, nl,
     sleep(1),
     write('***Choice: Was machst du?***'), nl,
     sleep(1),
@@ -219,31 +219,39 @@ scene(do_we_want_to_flee_rainforest) :-
 % Szene 7a: She agrees because she really likes him now
 scene(she_really_likes_him) :-
     cls,
-    write('Niya: Ja, ich moechte sehr gerne mit dir fluechten. Ich liebe dich! <3'), nl,
+    write('Niya: "Ja, ich moechte sehr gerne mit dir fluechten. Ich liebe dich! <3"'), nl,
     sleep(1),
-    write('Ihr ueberlebt beide und lebt gluecklich bis ans Ende eurer Tage. HAPPY END :)'), nl,
+    write('Rudolf lächelt und nimmt deine Hand. Ihr flieht gemeinsam in den tiefen Regenwald, fernab von der grausamen Realität, die euch bisher gefangen hielt.'), nl,
+    sleep(1),
+    write('Die Zeit vergeht, und ihr beide baut euch ein neues Leben auf. Ihr entdeckt die Schönheit der Natur und genießt jede Sekunde eurer neuen Freiheit. Mit der Zeit wird eure Liebe immer stärker.'), nl,
+    sleep(1),
+    write('Ihr überlebt beide und lebt glücklich bis ans Ende eurer Tage. HAPPY END :)'), nl,
     finish.
 
 % Szene 7b: She has to tell him something important
 scene(she_has_to_tell_him_something) :-
     cls,
-    write('Niya: Ich muss dir vorher noch etwas Wichtiges sagen...'), nl,
+    write('Niya: "Rudolf, bevor wir flüchten, muss ich dir noch etwas Wichtiges sagen..."'), nl,
     sleep(1),
-    write('Niya: Ich bin schwanger.'), nl,
+    write('Du nimmst einen tiefen Atemzug und schaust ihm in die Augen:'), nl,
+    write('Niya: "Ich bin schwanger."'), nl,
     sleep(1),
-    write('Rudolf: Oh mein Gott! Ich freu mich ja so <3'), nl,
+    write('Rudolfs Augen weiten sich vor Überraschung, doch dann breitet sich ein breites Lächeln auf seinem Gesicht aus.'), nl,
+    write('Rudolf: "Oh mein Gott! Ich freue mich ja so <3"'), nl,
     sleep(1),
-    write('Ihr fluechtet trotzdem gemeinsam in den Regenwald. Bei der Geburt des Kindes allerdings stirbst du, und Rudolf musst das Kind alleine aufziehen. :('), nl,
+    write('Ihr entscheidet euch trotzdem, gemeinsam in den Regenwald zu flüchten. Die Flucht ist anstrengend und gefährlich, aber eure Liebe und die Aussicht auf ein neues Leben geben euch Kraft.'), nl,
+    sleep(1),
+    write('Doch die Strapazen der Flucht und die Geburt des Kindes fordern ihren Tribut. Du stirbst bei der Geburt, und Rudolf bleibt mit eurem Kind allein zurück. Er schwört, es in deinem Andenken großzuziehen und ihm eine bessere Zukunft zu ermöglichen. :('), nl,
     finish.
 
 % Szene 7c: They break out of the military camp and she has to decide whether to take ship 1 or 2
 scene(she_dont_like_him) :-
     cls,
-    write('Ihr habt aus dem Militaerlager ausbrechen koennen.'), nl,
+    write('Ihr habt es geschafft, aus dem Militaerlager zu entkommen. Die Nacht ist dunkel und ihr seid weit genug weg, um eine kurze Verschnaufpause einzulegen.'), nl,
     sleep(1),
-    write('In einem ruhigen Moment entwischt du Rudolf, und du rennst zum Hafen von Namibia, um aus Namibia zu entkommen.'), nl,
+    write('In einem ruhigen Moment nutzt du die Gelegenheit, um Rudolf zu entkommen. Du rennst so schnell du kannst zum Hafen von Namibia, in der Hoffnung, ein Schiff zu finden, das dich in die Freiheit bringt.'), nl,
     sleep(1),
-    write('Du entdeckst zwei Schiffe, die beide so aussehen, als koenntest du unbemerkt an Bord gelangen.'), nl, nl,
+    write('Am Hafen angekommen, siehst du zwei Schiffe, die bereit zum Ablegen sind. Beide sehen so aus, als könntest du unbemerkt an Bord gelangen.'), nl, nl,
     sleep(1),
     write('***Choice: Was machst du?***'), nl,
     sleep(1),
@@ -256,18 +264,23 @@ scene(she_dont_like_him) :-
 % Szene 8a: Ship one, she gets discovered by the passengers and thrown overboard with racist insults
 scene(ship_one) :-
     cls,
-    write('Die Insassen des Schiffes entdecken dich.'), nl,
+    write('Du entscheidest dich für Schiff 1, ein rot lackiertes altes Segelschiff. Du schleichst dich an Bord und versteckst dich im Frachtraum. Die Stunden vergehen und du denkst, du bist in Sicherheit.'), nl,
     sleep(1),
-    write('Du wirst ueber Bord geworfen :('), nl,
+    write('Doch eines Nachts, als du dich unvorsichtig bewegst, wirst du von einem der Matrosen entdeckt. Er schlägt Alarm, und bald bist du von wütenden Besatzungsmitgliedern umzingelt.'), nl,
+    sleep(1),
+    write('Sie schreien dich an, beschimpfen dich mit rassistischen Beleidigungen und zerren dich schließlich gewaltsam an Deck. Ohne ein weiteres Wort wirst du über Bord geworfen. Die kalten Wellen des Ozeans verschlingen dich, und dein Schicksal ist besiegelt. :('), nl,
     finish.
 
 % Szene 8b: Ship two, she doesnt get discovered and lives happily ever after in Argentina
 scene(ship_two) :-
     nl,
-    write('Du wirst nicht entdeckt und landest in Argentinien.'), nl,
+    write('Du entscheidest dich für Schiff 2, ein moderneres Segelschiff mit hellblauen Wänden. Du schleichst dich an Bord und findest ein Versteck in einem unbenutzten Raum tief im Inneren des Schiffes.'), nl,
     sleep(1),
-    write('Du lebst gluecklich bis zum Ende deiner Tage. HAPPY END :)'), nl,
+    write('Die Reise ist lang und anstrengend, doch du wirst nicht entdeckt. Du überlebst von den wenigen Vorräten, die du mitgenommen hast und hörst hin und wieder Gespräche der Besatzung, die dir Hoffnung geben, dass das Ziel in greifbarer Nähe ist.'), nl,
+    sleep(1),
+    write('Nach Wochen auf See legst du endlich in Argentinien an. Du verlässt das Schiff unbemerkt und betrittst das Land, das dir eine neue Chance auf ein besseres Leben bietet. In Argentinien findest du Arbeit und baust dir ein neues Leben auf. Du lebst glücklich bis zum Ende deiner Tage. HAPPY END.'), nl,
     finish.
+
 
 % *****************************Choice Handling******************************
 
