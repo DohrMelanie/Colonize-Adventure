@@ -36,16 +36,16 @@ get_random_choice(Choice) :-
 cls :- write('\e[2J').
 
 % *****************************Szenes******************************
-% Szene 1: Kolonialist verabschiedet sich von seiner Frau und seiner 8-jährigen Tochter
+% Szene 1: Kolonialist verabschiedet sich von seiner Frau und seiner 8-jaehrigen Tochter
 scene(colonialist_introduction) :-
     nl,
     write('Dein Name lautet Rudolf Wolfram. Du bist beim deutschen Heer und hast den Dienstgrad Hauptmann.'), nl,
     sleep(1),
     write('Du bist kurz vor der Versetzung nach Deutsch-Namibia, als Kolonialist.'), nl,
     sleep(1),
-    write('Du musst dich nun von Luise Wolfram, deiner Frau und Anja Wolfram, deiner 8-jährigen Tochter verabschieden.'), nl,
+    write('Du musst dich nun von Luise Wolfram, deiner Frau und Anja Wolfram, deiner 8-jaehrigen Tochter verabschieden.'), nl,
     sleep(1),
-    write('Du fährst zum Hafen. Es ist Seemannssontag (ein Donnerstag mit sehr gutem Essen).'), nl,
+    write('Du faehrst zum Hafen. Es ist Seemannssontag (ein Donnerstag mit sehr gutem Essen).'), nl,
     sleep(1),
     write('***Choice: Was wirst du essen?***'), nl,
     sleep(1),
@@ -57,14 +57,14 @@ scene(colonialist_introduction) :-
     read_choice(Choice),
     handle_choice(colonialist_introduction, Choice).
 
-% Szene 2a: Rudolf ist bis zur Ende der Reise krank und muss sich auch mehrmals übergeben.
+% Szene 2a: Rudolf ist bis zur Ende der Reise krank und muss sich auch mehrmals uebergeben.
 scene(sick_officers) :-
     cls,
     write('Du: Ich fuehle mich nicht gut... ich glaube ich habe das Falsche gegessen...'), nl,
     sleep(1),
     write('Albrecht: Ich auch nicht... wir haben beide das Falsche gegessen... dieser Fisch war nicht das gelbe vom Ei...'), nl,
     sleep(1),
-    write('Beide müssen sich uebergeben und sind durchgehend, bis zum Ende der Reise krank.'), nl,
+    write('Beide muessen sich uebergeben und sind durchgehend, bis zum Ende der Reise krank.'), nl,
     sleep(1),
     scene(meeting_niya).
 
@@ -73,7 +73,7 @@ scene(officer_get_together) :-
     cls,
     write('Du: Ach, dich sehe ich hier zum ersten Mal. Wie lautet dein Name?'), nl,
     sleep(1),
-    write('Albrecht: Mein Name ist Albrecht von Vogel, schön dich kennenzulernen. Wie heißt du?'), nl,
+    write('Albrecht: Mein Name ist Albrecht von Vogel, schoen dich kennenzulernen. Wie heisst du?'), nl,
     sleep(1),
     write('Du: Mein Name ist Rudolf Wolfram und ich bin vierundzwanzig Jahre alt. Vom Dienstgrad bin ich ein Hauptmann. Und du?'), nl,
     sleep(1),
@@ -261,7 +261,7 @@ scene(better_treatment) :-
     sleep(1),
     scene(get_together).
 
-% Szene 10: Sie reden über ihre Gefühle und kommen zusammen
+% Szene 10: Sie reden ueber ihre Gefuehle und kommen zusammen
 scene(get_together) :-
     cls,
     write('Niya: Du scheinst ja nicht so schlecht zu sein. Aber ich bin mich nicht sicher, ob ich momentan einen Freund vertragen koennte... meine Familie ist naemlich riesig.'), nl,
@@ -278,8 +278,153 @@ scene(get_together) :-
     sleep(1),
     write('Ihr kuesst euch und verabschiedet euch so.'), nl,
     sleep(1),
-    -- Anbindung an anderen Part
+    scene(decision_vacation).
 
+% Szene 11: Entscheidung ueber die Möglichkeit nach Hause zu seiner Frau zu fahren (Krankenurlaub)
+scene(decision_vacation) :-
+    cls,
+    write('Du hast nun die Möglichkeit, nach Hause zu deiner Frau zu fahren und Krankenurlaub zu machen.'), nl,
+    sleep(1),
+    write('***Choice: Was wirst du machen?***'), nl,
+    sleep(1),
+    write('a: Du machst den Urlaub'), nl,
+    sleep(1),
+    write('b: Du bleibst in Namibia bei deiner Geliebten'), nl,
+    read_choice(Choice),
+    handle_choice(decision_vacation, Choice).
+
+% Szene 12a: Er macht den Urlaub
+scene(taking_vacation) :-
+    cls,
+    write('Du entscheidest dich, den Urlaub zu machen und faehrst nach Hause.'), nl,
+    sleep(1),
+    write('***Choice: Wie gehst du mit deiner Frau um?***'), nl,
+    sleep(1),
+    write('a: Du fuehlst dich schuldig und erzaehlst ihr davon'), nl,
+    sleep(1),
+    write('b: Du verheimlichst deiner frau deine geliebte.'), nl,
+    read_choice(Choice),
+    handle_choice(taking_vacation, Choice).
+
+% Szene 12b: Er bleibt in Namibia bei seiner Geliebten
+scene(staying_namibia) :-
+    cls,
+    write('Du entscheidest dich, in Namibia bei deiner Geliebten zu bleiben.'), nl,
+    .
+
+% Szene 13a: Du fuehlst dich schuldig und erzaehlst deiner Frau davon
+scene(feeling_guilty) :-
+    cls,
+    write('Du erzaehlst deiner Frau von der Affaere und fuehlst dich schuldig.'), nl,
+    sleep(1),
+    write('Deine Frau bringt sich um.'), nl,
+    die,
+    finish.
+
+% Szene 13b: Deine Frau erfaehrt durch einen Brief von Rudolf an Niya von dir und deiner Geliebten
+scene(wife_finds_out) :-
+    cls,
+    write('Deine Frau erfaehrt durch einen Brief von Rudolf an Niya von dir und deiner Geliebten.'), nl,
+    sleep(1),
+    write('Sie laesst sich scheiden.'), nl,
+    sleep(1),
+    write('Du gehst zurueck nach Namibia.'), nl,
+    scene(rudolf_meets_albrecht).
+
+
+% Szene 14: Rudolf trifft auf Albrecht
+scene(rudolf_meets_albrecht) :-
+    nl,
+    write('*Du durchquerst das Lager, ein Ort voller Unruhe und gemischter Gefuehle. Die tropische Hitze drueckt schwer auf deine Schultern, als du Albrecht siehst, der gerade dabei ist, seine Ausruestung zu sortieren. Deine Gedanken rasen. Albrecht war immer ein treuer Kamerad in dieser unwirtlichen Umgebung, aber nun suchst du verzweifelt nach Niya.*'), nl,
+    sleep(2),
+    write('***Choice: Was machst du?***'), nl,
+    sleep(1),
+    write('a: Sage Albrecht, dass er ein guter Freund ist'), nl,
+    sleep(1),
+    write('b: Fuehre Smalltalk, erzaehle dass du nach Niya suchst'), nl,
+    read_choice(Choice),
+    handle_choice(rudolf_meets_albrecht, Choice).
+
+% Szene 15a: Rudolf sagt ihm, dass er ein guter Freund ist
+scene(rudolf_tells_albrecht_that_he_is_a_good_friend) :-
+    cls,
+    write('Du: Albrecht, du bist ein guter Freund!'), nl,
+    sleep(1),
+    write('*Albrecht wird rot und schaut verlegen zu Boden. Du spuerst eine unerwartete Spannung in der Luft, die ueber die uebliche Kameradschaft hinausgeht.*'), nl,
+    sleep(2),
+    write('Albrecht: Ich aehh... Ich stehe auf dich!'), nl,
+    sleep(1),
+    write('*Dein Herz schlaegt schneller. Diese unerwartete Offenbarung laesst dich stocken. In dieser rauen, fremden Welt haettest du nie gedacht, dass solch zarte Gefuehle entstehen koennten.*'), nl,
+    sleep(2),
+    write('Du: Ich stehe auch auf dich!'), nl,
+    sleep(1),    
+    write('*Albrechts Augen leuchten auf, und ohne ein weiteres Wort zu verlieren, nehmt ihr euch bei den Haenden und beschliesst, gemeinsam in den Regenwald zu fluechten. Ihr verlasst das Chaos und die Gewalt des Lagers und findet Frieden in der Wildnis, wo ihr gluecklich bis ans Ende eurer Tage lebt.*'), nl,
+    scene(rudolf_meets_albrecht).
+
+% Szene 15b: Sie reden nur kurz miteinander
+scene(they_talk_with_each_other) :-
+    cls,
+    write('*Du gehst auf Albrecht zu und versuchst, moeglichst ruhig zu wirken, obwohl die Sorge um Niya dich innerlich zerreisst. Diese Kolonie, mit all ihren Gefahren und Herausforderungen, hat dich gelehrt, deine Emotionen zu verbergen.*'), nl,
+    sleep(1),
+    write('Du: Hallo Albrecht, ich suche Niya. Hast du sie irgendwo gesehen?'), nl,
+    sleep(2),
+    write('Albrecht: Ja, sie ist in ihrem Zelt. Warum suchst du sie?'), nl,
+    sleep(2),
+    write('Du: Danke! Ich muss dringend mit ihr sprechen.'), nl,
+    sleep(1),
+    write('*Du verabschiedest dich hastig und machst dich auf den Weg zu Niya. Deine Gedanken kreisen um die letzten Wochen. Niya, die Sklavin, die dein Herz beruehrt hat, war mehr als nur eine Dienerin. Sie war eine Seele, die du retten wolltest.*'), nl, nl,
+    sleep(1),
+    write('*Im Zelt angekommen, findest du Niya, die gerade dabei ist, ihre Sachen zu packen. Ihre Augen weiten sich ueberrascht, als sie dich sieht.*'), nl,
+    sleep(2),
+    write('Du: Hi Niya!'), nl,
+    sleep(1),
+    write('Niya: Hi Rudolf! Was gibt\'s?'), nl,
+    sleep(1),
+    write('Du: Ich hab eine Idee ... wollen wir gemeinsam fluechten?'), nl,
+    get_random_choice(Choice),
+    handle_choice(do_we_want_to_flee, Choice).
+
+% Szene 16a: Sie sagt zu, da sie mittlerweile wirklich auf ihn steht
+scene(she_really_likes_him) :-
+    cls,
+    write('*Niya schaut dich an, und du siehst, wie sich ein sanftes Laecheln auf ihrem Gesicht ausbreitet. Ihre Augen, die oft Schmerz und Trauer spiegeln, leuchten nun voller Hoffnung und Zuneigung.*'), nl,
+    sleep(1),
+    write('Niya: Ja, ich moechte sehr gerne mit dir fluechten. Ich liebe dich! <3'), nl,
+    sleep(2),
+    write('*Euer Herzschlag synchronisiert sich, als ihr euch umarmt. Ihr wisst, dass ihr zusammen alles schaffen koennt. Ihr verlasst das Militaerlager, das Symbol der Unterdrueckung und Angst, und findet Zuflucht im dichten Gruen des Regenwaldes. Dort baut ihr euch ein neues Leben auf, fernab von den Schrecken der Vergangenheit.*'), nl,
+    sleep(2),
+    write('Ihr ueberlebt beide und lebt gluecklich bis ans Ende eurer Tage. HAPPY END :)'), nl,
+    finish.
+
+% Szene 16b: Sie muss ihm vorher noch etwas Wichtiges sagen
+scene(she_has_to_tell_him_something) :-
+    cls,
+    write('*Niya schaut dich mit ernster Miene an und atmet tief durch. Ihr Gesicht, von den Jahren der Unterdrueckung und des Leids gezeichnet, zeigt einen Ausdruck der Unsicherheit.*'), nl,
+    sleep(1),
+    write('Niya: Ich muss dir vorher noch etwas Wichtiges sagen...'), nl,
+    sleep(2),
+    write('Niya: Ich bin schwanger.'), nl,
+    sleep(1),
+    write('*Die Worte treffen dich unerwartet, und fuer einen Moment weisst du nicht, was du sagen sollst. Deine Gedanken wirbeln durcheinander, aber du fuehlst auch eine tiefe Freude.*'), nl,
+    sleep(2),
+    write('Rudolf: Oh mein Gott! Ich freu mich ja so <3'), nl,
+    sleep(1),
+    write('*Ihr fluechtet trotzdem gemeinsam in den Regenwald, voller Hoffnung und Vorfreude. Doch das Schicksal ist grausam. Bei der Geburt des Kindes stirbt Niya, und du musst das Kind alleine aufziehen. Der Schmerz ueber ihren Verlust ist unermesslich, aber die Liebe zu eurem Kind gibt dir die Kraft, weiterzumachen.*'), nl,
+    finish.
+
+% Szene 16c: Sie hauen gemeinsam aus dem Militaerlager ab, sie steht nicht wirklich auf ihn
+scene(she_does_not_like_him) :-
+    nl,
+    write('*Niya nickt entschlossen, aber du siehst ein Zoegern in ihren Augen. Etwas stimmt nicht, doch du verdraengst deine Zweifel. Die Hoffnung auf ein gemeinsames Leben ist zu stark.*'), nl,
+    sleep(1),
+    write('Niya: Ja, ich moechte mit dir fluechten.'), nl,
+    sleep(2),
+    write('*Ihr fluechtet gemeinsam aus dem Militaerlager, aber die Reise ist hart und entbehrungsreich. Bald merkst du, dass etwas nicht stimmt. Niya wirkt abwesend und distanziert.*'), nl,
+    sleep(2),
+    write('Niya: Es tut mir leid, Rudolf, aber ich kann das nicht. Ich... ich habe jemanden anders getroffen.'), nl,
+    sleep(2),
+    write('*Ihr Gestaendnis trifft dich wie ein Schlag. Niya verlaesst dich, und du bleibst mit einem gebrochenen Herzen zurueck. Die Erkenntnis, dass sie dich nur benutzt hat, um zu entkommen, laesst einen bitteren Geschmack in deinem Mund zurueck. Der Traum von einem gemeinsamen Leben zerbricht, und du kehrst in die Einsamkeit zurueck.*'), nl,
+    finish.
 % *****************************Choice Handling******************************
 handle_choice(colonialist_introduction, a) :-
     scene(sick_officers).
@@ -299,3 +444,33 @@ handle_choice(telling_niya, a) :-
     scene(worse_treatment).
 handle_choice(telling_niya, b) :-
     scene(better_treatment).
+
+
+    handle_choice(decision_vacation, a) :-
+    scene(taking_vacation).
+handle_choice(decision_vacation, b) :-
+    scene(staying_namibia).
+
+handle_choice(taking_vacation, a) :-
+    scene(feeling_guilty).
+handle_choice(taking_vacation, b) :-
+    scene(wife_finds_out).
+
+handle_choice(staying_namibia, a) :-
+    scene(feeling_guilty).
+handle_choice(staying_namibia, b) :-
+    scene(wife_finds_out).
+
+% Entscheidungen in der Szene "Rudolf trifft auf Albrecht"
+handle_choice(rudolf_meets_albrecht, a) :-
+    scene(rudolf_tells_albrecht_that_he_is_a_good_friend).
+handle_choice(rudolf_meets_albrecht, b) :-
+    scene(they_talk_with_each_other).
+
+% Entscheidungen in der Szene "Sie reden nur kurz miteinander"
+handle_choice(do_we_want_to_flee, a) :-
+    scene(she_really_likes_him).
+handle_choice(do_we_want_to_flee, b) :-
+    scene(she_has_to_tell_him_something).
+handle_choice(do_we_want_to_flee, c) :-
+    scene(she_does_not_like_him).
