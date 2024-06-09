@@ -47,6 +47,14 @@ scene(niya_introduction) :-
     sleep(1),
     write('Als du bei der Krankenstation ankommst, triffst du auf zwei Kolonialisten, Rudolf und Albrecht. Sie leiden beide an Fieber und Uebelkeit. Den Grund dafuer kennst du nicht.'), nl, nl,
     sleep(1),
+    write('Du wirst gebeten, bestimmte Gegenstaende in der Krankenstation zu finden.'), nl,
+    search_items.
+
+% Scene 1b: Story geht weiter
+scene(niya_choice_heal) :-
+    cls,
+    write('Nun, da du die Gegenstaende gefunden hast, kannst du dich um Rudolf und Albrecht kuemmern.'), nl,
+    sleep(1),
     write('***Choice: Du hast mehrere Behandlungsmoeglichkeiten. Welche waehlst du?***'), nl,
     sleep(1),
     write('a: Lege ihnen nasse, kalte Lappen auf die Stirn'), nl,
@@ -281,6 +289,98 @@ scene(ship_two) :-
     write('Nach Wochen auf See legst du endlich in Argentinien an. Du verlaesst das Schiff unbemerkt und betrittst das Land, das dir eine neue Chance auf ein besseres Leben bietet. In Argentinien findest du Arbeit und baust dir ein neues Leben auf. Du lebst gluecklich bis zum Ende deiner Tage. HAPPY END.'), nl,
     finish.
 
+% *****************************Mini Game******************************
+
+% Function to search for items in the Krankenstation
+search_items :-
+    nl,
+    write('***Suche nach folgenden Gegenstaenden 1n der Krankenstation:***'), nl,
+    sleep(1),
+    write('1. Thermometer'), nl,
+    sleep(1),
+    write('2. Verbandskasten'), nl,
+    sleep(1),
+    write('3. Schluessel fuer das Medizinka9inett'), nl,
+    sleep(1),
+    find_item(thermometer).
+
+% Function to find an item
+find_item(Item) :-
+    nl,
+    format('Du suchst nach ~w. W0 moechtest du nachsehen?', [Item]), nl,
+    sleep(1),
+    write('a: Schreibtisch'), nl,
+    sleep(1),
+    write('b: Schrank'), nl,
+    sleep(1),
+    write('c: Be4t'), nl,
+    read_choice(Choice),
+    check_item_location(Item, Choice).
+
+% Check the location for the item
+check_item_location(thermometer, b) :-
+    nl,
+    write('Du hast das Thermometer im Schrank gefunden!'), nl,
+    write('Allerdings ist es kaputt. Vielleicht kannst du es reparieren.'), nl,
+    write('Vielleicht ist wo anders ein Schraubenzieher?'), nl,
+    find_item(schraubenzieher).
+
+check_item_location(thermometer, _) :-
+    nl,
+    write('Das Thermometer ist hier nicht. Versuche es woanders.'), nl,
+    find_item(thermometer).
+
+check_item_location(verbandskasten, c) :-
+    nl,
+    write('Du hast den Verbandskasten unter dem Bett gefunden!'), nl,
+    find_item(schluessel).
+
+check_item_location(verbandskasten, _) :-
+    nl,
+    write('Der Verbandskasten ist hier nicht. Versuche es woanders.'), nl,
+    find_item(verbandskasten).
+
+check_item_location(schluessel, a) :-
+    nl,
+    write('Du hast den Schluessel auf dem Schreibtisch gefunden! Jetzt kannst du das Medizinkabinett oeffnen.'), nl,
+    solve_puzzle.
+
+check_item_location(schluessel, _) :-
+    nl,
+    write('Der Schluessel ist hier nicht. Versuche es woanders.'), nl,
+    find_item(schluessel).
+
+check_item_location(schraubenzieher, a) :-
+    nl,
+    write('Du hast den Schraubenzieher im Schreibtisch gefunden!'), nl,
+    write('Du konntest mit ihm deinen Thermometer reparieren. YAY!'), nl,
+    find_item(verbandskasten).
+
+check_item_location(schraubenzieher, _) :-
+    nl,
+    write('Der Schraubenzieher ist hier nicht. Versuche es woandersm um deinen Thermometer zu reparieren.'), nl,
+    find_item(schraubenzieher).
+
+% Function to solve the puzzle for the Medizinkabinett
+solve_puzzle :-
+    nl,
+    write('Das Medizinkabinett ist mit einem Zahlenschloss gesichert. Die Kombination besteht aus drei Ziffern. Doch welche Zahlen sind es wohl? Tipp: du kennst sie bereits!'), nl,
+    sleep(1),
+    write('Tippe die dreistellige Kombination ein: '), nl,
+    read_choice(Choice),
+    check_code(Choice).
+
+% Check the entered code
+check_code(1904) :-
+    nl,
+    write('Das Zahlenschloss oeffnet sich! Du hast das Raetsel geloest und Zugang zu den Medikamenten im Kabinett.'), nl,
+    write('Warum 1904? Nun, von diesem Jahr bis zu Jahre 1908 wurde gegen das Volk von Niya, die Nama, Genozid begangen. Die Zahlen sind eine Erinnerung an die Grausamkeit, die Niya und ihr Volk erleiden mussten.'),
+    scene(niya_choice_heal).
+
+check_code(_) :-
+    nl,
+    write('Falscher Code. Versuche es erneut.'), nl,
+    solve_puzzle.
 
 % *****************************Choice Handling******************************
 
