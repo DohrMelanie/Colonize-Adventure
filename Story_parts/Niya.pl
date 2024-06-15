@@ -34,7 +34,7 @@ get_random_choice(Choice) :-
 
 cls :- write('\e[2J').
 
-% *****************************Szenes******************************
+% *****************************Szenen******************************
 % Szene 0: Einleitung
 scene(niya_mines) :-
     nl,
@@ -438,26 +438,6 @@ handle_choice(ship, a) :-
 handle_choice(ship, b) :-
     scene(ship_two).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 :- dynamic i_am_at/1, at/2, holding/1, torch_lifetime/1, battery_state/3, flashlight_on/0, snake_calm/0, tnt_boom/0.
 
 % Initialisierung der Variablen
@@ -504,7 +484,7 @@ start_mine :-
     initialize,
     write('Du gehst gerade deinen Geschaeften in den Minen nach, und ploetzlich'), nl,    sleep(1),
     write('WOOOOOOOMP.'), nl,    sleep(1),
-    write('Der Ausgang der Mine ist gerade eingestaerzt...'), nl,sleep(1),
+    write('Der Ausgang der Mine ist gerade eingestuerzt...'), nl,sleep(1),
     write('Du musst einen anderen Weg hinausfinden.'), nl,sleep(1),
     write('Das Einzige, was du vom Minen hast, ist eine Fackel.'), nl,sleep(1),
     write('Aber die Fackel scheint jede Minute weniger Licht auszustrahlen.'), nl,sleep(1),
@@ -554,7 +534,7 @@ decrement_torch :-
 
 check_torch(X) :-
     X > 0,
-    write('Deine Fackel brennt. Verbleibende Zeit: '), write(X), write(' Zaege.'), nl,
+    write('Deine Fackel brennt. Verbleibende Zeit: '), write(X), write(' Zuege.'), nl,
     !.
 
 check_torch(0) :-
@@ -595,13 +575,13 @@ go(e) :-
 go(e) :-
     i_am_at(r5),
     \+ holding(lighter),  % Spieler muss das Feuerzeug haben, um nach Osten zu gehen
-    write('Du brauchst etwas, um das TNT zu entzaenden.'), nl,sleep(1),
+    write('Du brauchst etwas, um das TNT zu entzuenden.'), nl,sleep(1),
     !.
 
 go(e) :-
     i_am_at(r5),
     holding(lighter),
-    start_puzzle(r5),  % Zaende das TNT an
+    start_puzzle(r5),  % Zuende das TNT an
     retract(i_am_at(r5)),
     assert(i_am_at(r6)),  % Gehe von R5 nach R6
     look,
@@ -682,7 +662,7 @@ describe(r5) :-
     write('Dieser Raum riecht nach Schießpulver. Warum wohl....'),sleep(1), nl.
 
 describe(r5) :-
-    write('Du bist in einem Raum mit einer großen Kiste TNT.'),sleep(1), nl.
+    write('Du bist in einem Raum mit einer grossen Kiste TNT.'),sleep(1), nl.
 
 describe(r6) :-
     write('Du bist in einem Raum voller Kristalle. WOOOOOOW. Das ist das Schoenste, was ich je gesehen habe.'),sleep(1), nl.
@@ -707,8 +687,8 @@ start_puzzle(r4) :-
 
 start_puzzle(r4) :-
     holding(flute),
-    write('du hast eine verraeckte idee.'), nl,sleep(1),
-    write('vielleicht kAnnst du die floete benutzen, um die SchlAnge zu beruhigen. wie ein schlangenbaendiger.'), nl,sleep(1),
+    write('du hast eine verrueckte idee.'), nl,sleep(1),
+    write('vielleicht kAnnst du die floete benutzen, um die SchlAnge zu beruhigen. wie ein Schlangenbaendiger.'), nl,sleep(1),
     write('bei genauerer Betrachtung kannst du auf deiner floete 2 toene spielen, a und b.'), nl,sleep(1),
     write('die SchlAnge ist eher klein, also sollten 4 noten ausreichen!'), nl,sleep(1),
     write('du musst nur herausfinden, wann du a und b in diesen 4 noten spielen musst.'), nl,sleep(1),
@@ -732,16 +712,16 @@ start_puzzle(r5) :-
 
 start_puzzle(r5) :-
     holding(lighter),
-    write('Du zaendest das TNT an und raeumst den Weg frei! Ist das ein Sonnenstrahl?'), nl,sleep(1), assert(tnt_boom),
+    write('Du zuendest das TNT an und raeumst den Weg frei! Ist das ein Sonnenstrahl?'), nl,sleep(1), assert(tnt_boom),
     !.
 
 start_puzzle(r5) :-
-    write('Du brauchst etwas, um das TNT zu entzaenden.'), nl,sleep(1),
+    write('Du brauchst etwas, um das TNT zu entzuenden.'), nl,sleep(1),
     !.
 
 start_puzzle(r6) :-
     write('Die Kristalle scheinen zu leuchten. Irgendwo muss ein Loch in den Waenden dieser Hoehle sein.'), nl,sleep(1),
-    write('Du siehst einen Indigo,einen Gelben,einen Graenen und einen Roten Kristall am boden liegen.'), nl,sleep(1),
+    write('Du siehst einen Indigo, einen Gelben, einen Gruenen und einen Roten Kristall am boden liegen.'), nl,sleep(1),
     write('Ordne die Kristalle in Regenbogenreihenfolge an, um zu entkommen. Gib die Reihenfolge als Liste ein (z.B. [rot-orange-gelb-gruen-blau-indigo-violett]): '), nl,sleep(1),
     puzzle_crystals.
 
@@ -819,4 +799,3 @@ restart :-
     sleep(3),
     write('Aber an diesem Ort ist etwas Besonderes. Du wurdest wiederbelebt.'),
     start_mine.
-
