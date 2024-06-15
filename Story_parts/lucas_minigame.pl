@@ -11,7 +11,7 @@ start :-
     loop([]).
 
 loop(Ingredients) :-
-    length(Zutaten, Length),
+    length(Ingredients, Length),
     Length < 4,
     write('Gib eine Zutat ein (oder fertig. zum Beenden): '), read(Ingredient),
     process(Ingredient, Ingredients).
@@ -35,7 +35,7 @@ process(_, Ingredients) :-
 
 check_and_cook(Ingredients) :-
     dish(Dish, Ingredients),
-    nl, write('Du hast folgendes Gericht erstellt: '), write(Gericht), nl,
+    nl, write('Du hast folgendes Gericht erstellt: '), write(Dish), nl,
     write('Guten Appetit!'), nl,
     start.
 
