@@ -1,87 +1,45 @@
-% Funktion zum Starten des Kochspiels
-start_cooking :-
-    nl,
-    write('Willkommen zum Kochspiel!'), nl,
-    write('Dein Ziel ist es, eines der drei Gerichte zuzubereiten:'), nl,
-    write(' - Fisch mit Kartoffeln'), nl,
-    write(' - Getrocknete Bohnen'), nl,
-    write(' - Haferbrei mit Zimt'), nl,
-    write('Du hast folgende Zutaten zur Verfügung:'), nl,
-    write(' - Fisch'), nl,
-    write(' - Kartoffeln'), nl,
-    write(' - Bohnen'), nl,
-    write(' - Hafer'), nl,
-    write(' - Zimt'), nl,
-    write(' - Wasser'), nl,
-    cooking([]).
+% Zutaten und Gerichte
+dish(fisch_und_kartoffeln, [fisch, kartoffeln]).
+dish(wasser_und_bohnen, [wasser, bohnen]).
+dish(haferbrei, [hafer, zimt, wasser]).
 
-% Funktion zum Kochen
-cooking(Ingredients) :-
-    nl,
-    write('Welche Zutat möchtest du als nächstes hinzufügen?'), nl,
-    write('a: Fisch'), nl,
-    write('b: Kartoffeln'), nl,
-    write('c: Bohnen'), nl,
-    write('d: Hafer'), nl,
-    write('e: Zimt'), nl,
-    write('f: Wasser'), nl,
-    write('g: Fertig'), nl,
-    nl,
-    read_choice(Choice),
-    (
-        Choice = g ->
-        check_dish(Ingredients),
-        ( 
-            valid_dish(Ingredients) -> true;
-            cooking(Ingredients)
-        );
+% Start 
+start :- 
+    write('Willkommen zum Prolog Kochspiel!'), nl,
+    write('Bitte gib die Zutaten (als Kleinbuchstaben!) ein, um ein Gericht zu erstellen.'), nl,
+    write('Mögliche Zutaten: Fisch, Kartoffeln, Bohnen, Hafer, Zimt, Wasser.'), nl,
+    loop([]).
 
-        add_ingredient(Choice, Ingredients, NewIngredients),
-        cooking(NewIngredients)
-    ).
+loop(Ingredients) :-
+    length(Zutaten, Length),
+    Length < 4,
+    write('Gib eine Zutat ein (oder fertig. zum Beenden): '), read(Ingredient),
+    process(Ingredient, Ingredients).
 
-% Funktion zum Hinzufügen einer Zutat
-add_ingredient(a, Ingredients, [fisch|Ingredients]).
-add_ingredient(b, Ingredients, [kartoffeln|Ingredients]).
-add_ingredient(c, Ingredients, [bohnen|Ingredients]).
-add_ingredient(d, Ingredients, [hafer|Ingredients]).
-add_ingredient(e, Ingredients, [zimt|Ingredients]).
-add_ingredient(f, Ingredients, [wasser|Ingredients]).
+loop(_) :-
+    write('Max. Anzahl an Zutaten erreicht oder ungültige Eingabe(n).'), nl,
+    write('Das Gericht kann nicht erstellt werden.'), nl,
+    start.
 
-% Funktion zum Überprüfen des Gerichts
-check_dish(Ingredients) :-
-    length(Ingredients, Len),
-    (
-        Len < 1 ->
-        nl, write('Du hast noch nicht genug Zutaten hinzugefügt.'), nl;
+process(fertig, Ingredients) :-
+    check_and_cook(Ingredients).
 
-        Len > 2 ->
-        nl, write('Leider hast du zu viele Zutaten hinzugefügt.'), nl;
+process(Ingredient, Ingredients) :-
+    member(Ingredient, [fisch, kartoffeln, bohnen, hafer, zimt, wasser]),
+    append(Ingredients, [Ingredient], NewIngredients),
+    loop(NewIngredients).
 
-        subset([fisch, kartoffeln], Ingredients), length(Ingredients, 2) ->
-        nl, write('Glückwunsch! Du hast Fisch mit Kartoffeln zubereitet!'), nl;
+process(_, Ingredients) :-
+    write('Ungültige Zutat, versuche es erneut.'), nl,
+    loop(Ingredients).
 
-        subset([bohnen], Ingredients), length(Ingredients, 1) ->
-        nl, write('Glückwunsch! Du hast getrocknete Bohnen zubereitet!'), nl;
+check_and_cook(Ingredients) :-
+    dish(Dish, Ingredients),
+    nl, write('Du hast folgendes Gericht erstellt: '), write(Gericht), nl,
+    write('Guten Appetit!'), nl,
+    start.
 
-        subset([hafer, zimt], Ingredients), length(Ingredients, 2) ->
-        nl, write('Glückwunsch! Du hast Haferbrei mit Zimt zubereitet!'), nl;
-
-        nl, write('Leider hast du noch nicht alle Zutaten hinzugefügt oder ein unbekanntes Gericht zubereitet.'), nl
-    ).
-
-% Funktion zur Überprüfung, ob das Gericht gültig ist
-valid_dish(Ingredients) :-
-    subset([fisch, kartoffeln], Ingredients), length(Ingredients, 2);
-    subset([bohnen], Ingredients), length(Ingredients, 1);
-    subset([hafer, zimt], Ingredients), length(Ingredients, 2).
-
-% Funktion zum Ausgeben der Zutaten
-print_ingredients([]).
-print_ingredients([Head|Tail]) :-
-    write(Head), nl,
-    print_ingredients(Tail).
-
-% Funktion zum Einlesen der Benutzerauswahl
-read_choice(Choice) :-
-    read(Choice).
+check_and_cook(_) :-
+    nl, write('Die Kombination der Zutaten ergeben kein Gericht.'), nl,
+    write('Bitte versuche es erneut'), nl,
+    start.
