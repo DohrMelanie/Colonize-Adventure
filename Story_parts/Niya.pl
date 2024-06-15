@@ -1,7 +1,6 @@
 % meta stuff
 start :-
-    instructions,
-    scene(niya_introduction).
+    scene(niya_mines).
 
 die :-
     !, finish.
@@ -36,11 +35,18 @@ get_random_choice(Choice) :-
 cls :- write('\e[2J').
 
 % *****************************Szenes******************************
-% Szene 1: Niya trifft auf Rudolf und Albrecht
-scene(niya_introduction) :-
+% Szene 0: Einleitung
+scene(niya_mines) :-
     nl,
     write('Dein Name lautet Niya Niambe. Du bis 16 Jahre alt, und deine ueberaus arme Familie gehoert zum Volk der Nama. Ausserdem hast du 10 Geschwister, darunter drei aeltere Brueder.'), nl,
     sleep(1),
+    write('Du bist Sklavin der Deutschen Konolialisten. Sie zwingen dich dazu in den Minen von, wie sie es nennen, Deutsch-Sudwestafrika zu arbeiten.'), nl,
+    start_mine.
+
+
+% Szene 1: Niya trifft auf Rudolf und Albrecht
+scene(niya_introduction) :-
+    instructions,
     write('Eines Tages kommt einer der Kolonialisten auf dich zu. Er erzaehlt dir, dass du aus den Minen rauskommst (in denen du seit deiner Kindheit arbeiten musst, um deine Familie zu versorgen), und du auf einer Krankenstation Menschen versorgen sollst.'), nl,
     sleep(1),
     write('Du bist froh, dass du endlich aus den Minen rauskommst und freust dich auf die Arbeit in der Krankenstation.'), nl,
@@ -431,3 +437,386 @@ handle_choice(ship, a) :-
     scene(ship_one).
 handle_choice(ship, b) :-
     scene(ship_two).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+:- dynamic i_am_at/1, at/2, holding/1, torch_lifetime/1, battery_state/3, flashlight_on/0, snake_calm/0, tnt_boom/0.
+
+% Initialisierung der Variablen
+initialize :-
+    retractall(i_am_at(_)), 
+    retractall(at(_, _)), 
+    retractall(holding(_)), 
+    retractall(torch_lifetime(_)), 
+    retractall(battery_state(_, _, _)), 
+    retractall(flashlight_on), 
+    retractall(snake_calm), 
+    retractall(tnt_boom),
+    
+    assert(i_am_at(r1)),
+    assert(torch_lifetime(7)),  % Anfangslebensdauer der Fackel.
+    
+    assert(path(r1, e, r2)),
+    assert(path(r1, n, r3)),
+    assert(path(r2, w, r1)),
+    assert(path(r2, e, r4)),
+    assert(path(r3, s, r1)),
+    assert(path(r3, e, r5)),
+    assert(path(r4, w, r2)),
+    assert(path(r5, w, r3)),
+    assert(path(r5, e, r6)),
+    assert(path(r6, w,r5)),
+    
+    assert(at(flashlight, r2)),
+    assert(at(flute, r3)),
+    assert(at(lighter, r4)),
+    assert(at(rope,r1)),
+    
+    % Anfangszustaende der Batterien
+    assert(battery_state(battery1, 1, '[+===-]')),  % Batterie 1, Position 1, Anfangszustand
+    assert(battery_state(battery2, 2, '[-===+]')),  % Batterie 2, Position 2, Anfangszustand
+    assert(battery_state(battery3, 3, '[+===-]')),  % Batterie 3, Position 3, Anfangszustand
+    
+    % Startgegenstaende im Inventar
+    assert(holding(torch)),
+    assert(holding(lighter)).
+
+% Start des Spiels
+start_mine :-
+    initialize,
+    write('Du gehst gerade deinen Geschaeften in den Minen nach, und ploetzlich'), nl,    sleep(1),
+    write('WOOOOOOOMP.'), nl,    sleep(1),
+    write('Der Ausgang der Mine ist gerade eingestaerzt...'), nl,sleep(1),
+    write('Du musst einen anderen Weg hinausfinden.'), nl,sleep(1),
+    write('Das Einzige, was du vom Minen hast, ist eine Fackel.'), nl,sleep(1),
+    write('Aber die Fackel scheint jede Minute weniger Licht auszustrahlen.'), nl,sleep(1),
+    write('Wenn du aeberleben willst, solltest du diese Hoehle verlassen, bevor sie ausgeht...'), nl,sleep(1),
+    instructions_mine,
+    look.
+
+% Anweisungen
+instructions_mine :-
+    nl,
+    write('Gib Befehle im Standard-Prolog-Syntax ein.'), nl,sleep(1),
+    write('Verfaegbare Befehle sind:'), nl,sleep(1),
+    write('n.  s.  e.  w.     -- um in diese Richtung zu gehen.'), nl,
+    write('take(Object).      -- um ein Objekt aufzunehmen.'), nl,
+    write('drop(Object).      -- um ein Objekt abzulegen.'), nl,
+    write('inventory.         -- um zu sehen, was du bei dir hast.'), nl,
+    write('look.              -- um dich erneut umzuschauen.'), nl,
+    write('instructions_mine. -- um diese Nachricht erneut zu sehen.'), nl,
+    write('halt.              -- um das Spiel zu beenden und zu verlassen.'), nl,
+    nl.
+
+% Umgebung anschauen
+look :-
+    nl,
+    decrement_torch,
+    i_am_at(Place),
+    describe(Place),
+    (Place \== r4 -> notice_objects_at(Place);nl).
+
+% Fackel abbrennen lassen
+decrement_torch :-
+    flashlight_on,
+    nl.
+
+decrement_torch :-
+    torch_lifetime(X),
+    X > 0,
+    NewX is X - 1,
+    retract(torch_lifetime(X)),
+    assert(torch_lifetime(NewX)),
+    check_torch(NewX),
+    !.
+
+decrement_torch :-
+    torch_lifetime(0),
+    restart.
+
+check_torch(X) :-
+    X > 0,
+    write('Deine Fackel brennt. Verbleibende Zeit: '), write(X), write(' Zaege.'), nl,
+    !.
+
+check_torch(0) :-
+    write('Deine Fackel ist ausgebrannt!'), nl,sleep(1),
+    restart.
+
+% Bewegungslogik
+n :- go(n).
+s :- go(s).
+e :- go(e).
+w :- go(w).
+
+go(n) :-
+    i_am_at(r1),
+    \+ holding(rope),  % Spieler muss das Seil haben, um nach Norden zu gehen
+    write('Vor dir ist eine Klippe. Wenn du sie jetzt erklimmst, wirst du sicher fallen'), nl,sleep(1),
+    !.
+
+go(n) :-
+    i_am_at(r1),
+    holding(rope),
+    assert(at(rope, r1)),
+    retract(i_am_at(r1)),
+    assert(i_am_at(r3)),  % Spieler geht von R1 nach R3
+    look,
+    start_puzzle(r3),  % Starte das Raetsel in R3
+    !.
+
+go(e) :-
+    tnt_boom,
+    i_am_at(Here),
+    path(Here, e, There),
+    retract(i_am_at(Here)),
+    assert(i_am_at(There)),
+    look,
+    start_puzzle(There),!.
+
+go(e) :-
+    i_am_at(r5),
+    \+ holding(lighter),  % Spieler muss das Feuerzeug haben, um nach Osten zu gehen
+    write('Du brauchst etwas, um das TNT zu entzaenden.'), nl,sleep(1),
+    !.
+
+go(e) :-
+    i_am_at(r5),
+    holding(lighter),
+    start_puzzle(r5),  % Zaende das TNT an
+    retract(i_am_at(r5)),
+    assert(i_am_at(r6)),  % Gehe von R5 nach R6
+    look,
+    !.
+
+go(Direction) :-
+    i_am_at(Here),
+    path(Here, Direction, There),
+    retract(i_am_at(Here)),
+    assert(i_am_at(There)),
+    look,
+    start_puzzle(There),
+    !.
+
+go(_) :-
+    write('Du kannst dort nicht hingehen.').
+
+% Objekte aufheben und ablegen
+take(X) :-
+    holding(X),
+    write('Du haeltst das bereits!'),
+    !.
+
+take(X) :-
+    i_am_at(Place),
+    at(X, Place),
+    retract(at(X, Place)),
+    assert(holding(X)),
+    write('Du hast ein '),write(X),write('aufgehoben'),nl,sleep(1),
+    decrement_torch,
+    nl,
+    start_puzzle(X),
+    !.
+
+take(_) :-
+    write('Ich sehe es hier nicht.'),
+    nl.
+
+drop(X) :-
+    holding(X),
+    i_am_at(Place),
+    retract(holding(X)),
+    assert(at(X, Place)),
+    write('Du hast '),write(X),write(' fallen lassen'),sleep(1),
+    !, nl.
+
+drop(_) :-
+    write('Du haeltst es nicht!'),
+    nl.
+
+% Inventar anzeigen
+inventory :-
+    write('Du haeltst: '), nl,
+    findall(Item, holding(Item), Items),
+    print_list(Items),
+    nl.
+
+print_list([]).
+print_list([H|T]) :-
+    write('- '), write(H), nl,
+    print_list(T).
+
+% Raum-Beschreibungen
+describe(r1) :-
+    write('Du bist am Anfang. Es gibt zwei Wege: eine Hoehle im Osten und eine Klippe im Norden.'),sleep(1), nl.
+
+describe(r2) :-
+    write('Du bist in einer Hoehle. Schau, da ist ein Minecart.'),sleep(1), nl.
+
+describe(r3) :-
+    write('Du kletterst mit deinem Seil auf die Klippe.'),sleep(1), nl.
+
+describe(r4) :-
+    write('Du bist in einer Hoehle. Hier ist eine große Schlange.'),sleep(1),nl.
+
+describe(r5) :-
+    tnt_boom,
+    write('Dieser Raum riecht nach Schießpulver. Warum wohl....'),sleep(1), nl.
+
+describe(r5) :-
+    write('Du bist in einem Raum mit einer großen Kiste TNT.'),sleep(1), nl.
+
+describe(r6) :-
+    write('Du bist in einem Raum voller Kristalle. WOOOOOOW. Das ist das Schoenste, was ich je gesehen habe.'),sleep(1), nl.
+
+% Raetsel starten
+start_puzzle(flashlight) :-
+    write('Du hast die Taschenlampe aufgehoben! Sie hat sogar Batterien. Wow. Jetzt musst du die Batterien richtig anordnen.'),sleep(1), nl,
+    write('Verwende den Befehl `show_flashlight.` um die aktuelle Anordnung der Batterien zu sehen.'),sleep(1), nl,
+    write('Verwende den Befehl `turn_battery(Number).` um die Batterie an der angegebenen Position (1, 2 oder 3) zu drehen.'),sleep(1), nl,
+    write('Wiederhole dies, bis alle Batterien in der richtigen Ausrichtung sind.'),sleep(1), nl,
+    show_flashlight,
+    !.
+
+start_puzzle(r3) :-
+    holding(rope),
+    !.
+
+start_puzzle(r4) :-
+    snake_calm,
+    write('Die Schlange ist ruhig und du kannst sicher vorbeigehen.'),sleep(1), nl,
+    !.
+
+start_puzzle(r4) :-
+    holding(flute),
+    write('du hast eine verraeckte idee.'), nl,sleep(1),
+    write('vielleicht kAnnst du die floete benutzen, um die SchlAnge zu beruhigen. wie ein schlangenbaendiger.'), nl,sleep(1),
+    write('bei genauerer Betrachtung kannst du auf deiner floete 2 toene spielen, a und b.'), nl,sleep(1),
+    write('die SchlAnge ist eher klein, also sollten 4 noten ausreichen!'), nl,sleep(1),
+    write('du musst nur herausfinden, wann du a und b in diesen 4 noten spielen musst.'), nl,sleep(1),
+    write('gib deine melodie wie folgt ein, z.B.: aaaa.'), nl,sleep(1),
+    puzzle_melody.
+
+puzzle_melody :-
+    read(Tune),
+    (Tune = aaba -> write('Du hast die richtige Melodie gespielt und ein Feuerzeug gefunden!'), nl, assert(holding(lighter)), assert(snake_calm);
+    write('Falsche Melodie! Die Schlange ist fast aufgewacht. Versuche es erneut.'), nl, puzzle_melody).
+
+start_puzzle(r4) :-
+    write('Hier ist eine riesige Schlange. Es scheint, als waerde sie auf etwas schlafen. Versuchen wir, heimlich vorbeizuschleichen. Wenn das nicht funktioniert... '), nl,sleep(1),
+    write('Muss ich etwas finden, um sie zu betaeuben oder so.'), nl,sleep(1),
+    write('Oh nein, sie ist aufgewacht...'), nl,sleep(1),
+    write('Die Schlange hat dich gerade gebissen...'), nl,sleep(1),
+    restart.
+
+start_puzzle(r5) :-
+    tnt_boom, !.
+
+start_puzzle(r5) :-
+    holding(lighter),
+    write('Du zaendest das TNT an und raeumst den Weg frei! Ist das ein Sonnenstrahl?'), nl,sleep(1), assert(tnt_boom),
+    !.
+
+start_puzzle(r5) :-
+    write('Du brauchst etwas, um das TNT zu entzaenden.'), nl,sleep(1),
+    !.
+
+start_puzzle(r6) :-
+    write('Die Kristalle scheinen zu leuchten. Irgendwo muss ein Loch in den Waenden dieser Hoehle sein.'), nl,sleep(1),
+    write('Du siehst einen Indigo,einen Gelben,einen Graenen und einen Roten Kristall am boden liegen.'), nl,sleep(1),
+    write('Ordne die Kristalle in Regenbogenreihenfolge an, um zu entkommen. Gib die Reihenfolge als Liste ein (z.B. [rot-orange-gelb-gruen-blau-indigo-violett]): '), nl,sleep(1),
+    puzzle_crystals.
+
+puzzle_crystals :-
+    read(Order),
+    (Order = rot-gelb-gruen-indigo -> write('Du hast die Kristalle richtig angeordnet, alle leuchten. WOW.'), nl,
+        write('Du hast gefunden, woher das Licht kommt, und bist aus der Mine entkommen!'), nl,sleep(5), scene(niya_introduction);
+    write('Das scheint nicht richtig zu sein. Nicht alle Kristalle leuchten. Versuche es erneut.'), nl,
+    puzzle_crystals).
+
+start_puzzle(_) :- !.
+
+% Objekte bemerken
+notice_objects_at(Place) :-
+    at(X, Place),
+    write('Hier ist ein '), write(X), write('.'), nl,sleep(1),
+    fail.
+
+notice_objects_at(_).
+
+% Batterie-Operationen
+turn_battery(Number) :-
+    battery_state(battery1, Number, State),
+    rotate(State, NewState),
+    retract(battery_state(battery1, Number, State)),
+    assert(battery_state(battery1, Number, NewState)),
+    check_flashlight_batteries,
+    !.
+
+turn_battery(Number) :-
+    battery_state(battery2, Number, State),
+    rotate(State, NewState),
+    retract(battery_state(battery2, Number, State)),
+    assert(battery_state(battery2, Number, NewState)),
+    check_flashlight_batteries,
+    !.
+
+turn_battery(Number) :-
+    battery_state(battery3, Number, State),
+    rotate(State, NewState),
+    retract(battery_state(battery3, Number, State)),
+    assert(battery_state(battery3, Number, NewState)),
+    check_flashlight_batteries,
+    !.
+
+rotate('[+===-]', '[-===+]').  % Batterie drehen
+rotate('[-===+]', '[+===-]').  % Batterie drehen
+
+show_flashlight :-
+    battery_state(battery1, 1, State1),
+    battery_state(battery2, 2, State2),
+    battery_state(battery3, 3, State3),
+    nl,
+    write('Taschenlampe: '), nl,
+    write(State1), nl,
+    write(State2), nl,
+    write(State3), nl,
+    nl.
+
+check_flashlight_batteries :-
+    battery_state(battery1, 1, State1),
+    battery_state(battery2, 2, State2),
+    battery_state(battery3, 3, State3),
+    (State1 = '[-===+]',
+     State2 = '[-===+]',
+     State3 = '[-===+]') ->
+        write('Du hast die Batterien richtig angeordnet und die Taschenlampe funktioniert jetzt!'), nl,sleep(1),
+        assert(flashlight_on);
+    write('Die Taschenlampe funktioniert immer noch nicht. Ordne weiter die Batterien an.'), nl,sleep(1),
+        decrement_torch.
+
+% Tod des Spielers
+restart :-
+    write('Du bist gestorben.'), nl,
+    sleep(3),
+    write('Aber an diesem Ort ist etwas Besonderes. Du wurdest wiederbelebt.'),
+    start_mine.
+
