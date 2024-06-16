@@ -1,3 +1,10 @@
+% LOAL - Game by Caroline Hornhuber, Melanie Dohr, Lucas Gastelsberger
+% Wir haben 2 Dateien, einmal aus der Sicht der Sklavin und einmal aus der Sicht des Kolonialisten
+% Wir haben die 2 Dateien nicht zusammengefügt, da es sonst sehr unübersichtlich geworden wäre
+% Der Benutzer unseres Spiels soll einfach am Anfang entscheiden, aus wessen Sicht er die Geschichte erleben will.
+% Innerhalb der Sichten gibt es gravierende Unterschiede im Bezug auf die Entscheidungen, die der Benutzer treffen kann und was der Benutzer erlebt.
+% Die Grundgeschichte ist allerdings dieselbe.
+
 % meta stuff
 start :-
     instructions,

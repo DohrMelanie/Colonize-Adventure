@@ -1,3 +1,10 @@
+% LOAL - Game by Caroline Hornhuber, Melanie Dohr, Lucas Gastelsberger
+% Wir haben 2 Dateien, einmal aus der Sicht der Sklavin und einmal aus der Sicht des Kolonialisten
+% Wir haben die 2 Dateien nicht zusammengefügt, da es sonst sehr unübersichtlich geworden wäre
+% Der Benutzer unseres Spiels soll einfach am Anfang entscheiden, aus wessen Sicht er die Geschichte erleben will.
+% Innerhalb der Sichten gibt es gravierende Unterschiede im Bezug auf die Entscheidungen, die der Benutzer treffen kann und was der Benutzer erlebt.
+% Die Grundgeschichte ist allerdings dieselbe.
+
 % meta stuff
 start :-
     scene(niya_mines).
@@ -655,11 +662,11 @@ describe(r3) :-
     write('Du kletterst mit deinem Seil auf die Klippe.'),sleep(1), nl.
 
 describe(r4) :-
-    write('Du bist in einer Hoehle. Hier ist eine große Schlange.'),sleep(1),nl.
+    write('Du bist in einer Hoehle. Hier ist eine grosse Schlange.'),sleep(1),nl.
 
 describe(r5) :-
     tnt_boom,
-    write('Dieser Raum riecht nach Schießpulver. Warum wohl....'),sleep(1), nl.
+    write('Dieser Raum riecht nach Schiesspulver. Warum wohl....'),sleep(1), nl.
 
 describe(r5) :-
     write('Du bist in einem Raum mit einer grossen Kiste TNT.'),sleep(1), nl.
