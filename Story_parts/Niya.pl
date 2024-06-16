@@ -688,7 +688,7 @@ start_puzzle(r4) :-
 start_puzzle(r4) :-
     holding(flute),
     write('du hast eine verrueckte idee.'), nl,sleep(1),
-    write('vielleicht kAnnst du die floete benutzen, um die SchlAnge zu beruhigen. wie ein Schlangenbaendiger.'), nl,sleep(1),
+    write('vielleicht kannst du die Floete benutzen, um die Schlange wie ein Schlangenbaendiger zu beruhigen.'), nl,sleep(1),
     write('bei genauerer Betrachtung kannst du auf deiner floete 2 toene spielen, a und b.'), nl,sleep(1),
     write('die SchlAnge ist eher klein, also sollten 4 noten ausreichen!'), nl,sleep(1),
     write('du musst nur herausfinden, wann du a und b in diesen 4 noten spielen musst.'), nl,sleep(1),

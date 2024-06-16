@@ -1,7 +1,7 @@
 % meta stuff
 start :-
     instructions,
-    scene(niya_introduction).
+    scene(colonialist_introduction).
 
 die :-
     !, finish.
@@ -38,7 +38,6 @@ cls :- write('\e[2J').
 % *****************************Szenes******************************
 % Szene 1: Kolonialist verabschiedet sich von seiner Frau und seiner 8-jaehrigen Tochter
 scene(colonialist_introduction) :-
-    nl,
     write('Dein Name lautet Rudolf Wolfram. Du bist beim deutschen Heer und hast den Dienstgrad Hauptmann.'), nl,
     sleep(1),
     write('Du bist kurz vor der Versetzung nach Deutsch-Namibia, als Kolonialist.'), nl,
@@ -47,15 +46,25 @@ scene(colonialist_introduction) :-
     sleep(1),
     write('Du faehrst zum Hafen. Es ist Seemannssontag (ein Donnerstag mit sehr gutem Essen).'), nl,
     sleep(1),
+    write('Du kannst dir jetzt ein Gericht zubereiten: '), nl,
+    sleep(1),
+    start_cooking.    
+
+% Szene 1a: Rudolf entscheidet über sein Essen
+scene(colonialist_eat) :-
+    cls,
+    write('Am Tag darauf kannst du waehlen was du essen wirst: '),nl,
+    sleep(1),
     write('***Choice: Was wirst du essen?***'), nl,
     sleep(1),
     write('a: Fisch mit Kartoffeln'), nl,
     sleep(1),
     write('b: getrocknete Bohnen'), nl,
     sleep(1),
-    write('c: Haferbrei mit Zimt'), nl
+    write('c: Haferbrei mit Zimt'), nl,
     read_choice(Choice),
-    handle_choice(colonialist_introduction, Choice).
+    handle_choice(colonialist_eat, Choice).
+
 
 % Szene 2a: Rudolf ist bis zur Ende der Reise krank und muss sich auch mehrmals uebergeben.
 scene(sick_officers) :-
@@ -79,7 +88,7 @@ scene(officer_get_together) :-
     sleep(1),
     write('Albrecht: Mein Dienstgrad ist Major.'), nl,
     sleep(1),
-    write('Du: Sehr schön. Wir sollten heute am Abend noch etwas trinken.'), ni,
+    write('Du: Sehr schoen. Wir sollten heute am Abend noch etwas trinken.'), nl,
     sleep(1),
     write('Albrecht: Ja, das sehe ich auch toll. Ich gehe wieder zurueck auf meine Station arbeiten, bis spaeter!'), nl,
     sleep(1),
@@ -96,7 +105,7 @@ scene(rudolf_and_albrecht) :-
     sleep(1),
     write('Albrecht: Mein Dienstgrad ist Major.'), nl,
     sleep(1),
-    write('Du: Sehr schön. Wir sollten heute am Abend noch etwas trinken.'), ni,
+    write('Du: Sehr schoen. Wir sollten heute am Abend noch etwas trinken.'), nl,
     sleep(1),
     write('Albrecht: Ja, das sehe ich auch toll. Ich gehe wieder zurueck auf meine Station arbeiten, bis spaeter!'), nl,
     sleep(1),
@@ -107,8 +116,8 @@ scene(rudolf_and_albrecht) :-
 
 % Szene 3: Rudolf und Albrecht betrinken sich am Schiff und leiden an einer Alkoholvergiftung.
 scene(officers_get_wild) :-
-    cls,
-    write('Du: Hallo Albrecht. Schön, dass du hier bist.'), nl,
+    nl,
+    write('Du: Hallo Albrecht. Schoen, dass du hier bist.'), nl,
     sleep(1),
     write('Albrecht: Hallo Rudolf! Es freut mich, dich zu sehen. Zeit, ein bisschen was zu trinken. Fangen wir doch mit dem Wein an.'), nl, 
     sleep(1),
@@ -120,12 +129,12 @@ scene(officers_get_wild) :-
 
 % Szene 4: Niya und Rudolf treffen sich auf der Krankenstation + Niya muss auf Rudolf und Albrecht aufpassen
 scene(meeting_niya) :-
-    cls,
+    nl,
     write('Niya: Hallo! Mein Name ist Niya Niambe und ich bin 16 Jahre alt. Wie ich sehe, seid ihr gerade erst angekommen. Fuehlt euch hier wohl!'), nl,
     sleep(1),
     write('Albrecht: Hallo Niya! Danke.'), nl,
     sleep(1),
-    write('Du: Schön dich kennenzulernen. Mein Name ist Rudolf und ich bin 24 Jahre alt.'), nl,
+    write('Du: Schoen dich kennenzulernen. Mein Name ist Rudolf und ich bin 24 Jahre alt.'), nl,
     sleep(1),
     write('Niya: Ich werde auf euch aufpassen. Falls ihr etwas braucht, bitte sagt es mir.'), nl,
     sleep(1),
@@ -135,8 +144,8 @@ scene(meeting_niya) :-
 
 % Szene 5: Niya legt einen kalten Lappen auf deren Stirn
 scene(taking_care) :-
-    cls,
-    write('Niya: Eure Temperatur ist ueberhoeht. Hier fuer euch beide, ein kalter Lappen.'), nl,
+    nl,
+    write('Niya: Eure Temperatur ist erhoeht. Hier fuer euch beide, ein kalter Lappen.'), nl,
     sleep(1),
     write('Du: Vielen Dank, mir geht es direkt viel besser...'), nl,
     sleep(1),
@@ -146,7 +155,7 @@ scene(taking_care) :-
 
 % Szene 6: Beide ueberleben und es geht beiden besser
 scene(surviving) :-
-    cls,
+    nl,
     write('Niya: Ich merke, euch geht es schon besser. Hier ein Kraeutertee, der putscht auf.'), nl,
     sleep(1),
     write('Du: Dank deiner Hilfe geht es uns schon viel besser, danke vielmals ;)'), nl,
@@ -157,7 +166,7 @@ scene(surviving) :-
 
 % Szene 7: Albrecht bekommt mit, wie Rudolf sie anschaut
 scene(talk) :-
-    cls,
+    nl,
     write('Albrecht: Ich bekomme mit, wie du Niya die ganze Zeit anschaust. Hast du etwa Gefuele fuer sie?'), nl,
     sleep(1),
     write('Du: Ach, quatsch. Ich habe eine Frau und eine Tochter zu Hause. Ich kann mich doch nicht in eine Sklavin verlieben...'), nl,
@@ -172,10 +181,9 @@ scene(talk) :-
     sleep(1),
     write('b: Weiter mit Albrecht darueber reden'), nl,
     sleep(1),
-    write('c: Du fuehlst dich schuldig wegen deiner Frau'), nl
+    write('c: Du fuehlst dich schuldig wegen deiner Frau'), nl,
     read_choice(Choice),
     handle_choice(talk, Choice).
-
 
 % Szene 8a: Rudolf erzaehlt Niya von seinen Gefuehlen
 scene(telling_niya) :-
@@ -245,7 +253,7 @@ scene(worse_treatment) :-
     sleep(1),
     write('Niya: Erspare dir die Beleidigungen. Ich liebe dich nicht.'), nl,
     sleep(1),
-    write('Du: Komm mit. Dich bringe ich jetzt in ein Gefaengnis. Da gehören so Leute wie du hin.'), nl,
+    write('Du: Komm mit. Dich bringe ich jetzt in ein Gefaengnis. Da gehoeren so Leute wie du hin.'), nl,
     sleep(1),
     write('Niya: Wieso? Hey. Lass mich in Ruhe!'), nl,
     sleep(1),
@@ -263,7 +271,7 @@ scene(better_treatment) :-
 
 % Szene 10: Sie reden ueber ihre Gefuehle und kommen zusammen
 scene(get_together) :-
-    cls,
+    nl,
     write('Niya: Du scheinst ja nicht so schlecht zu sein. Aber ich bin mich nicht sicher, ob ich momentan einen Freund vertragen koennte... meine Familie ist naemlich riesig.'), nl,
     sleep(1),
     write('Du: Mit mir wird deine Familie groesser. Ich liebe dich. Bitte gib mir doch wenigstens eine Chance.'), nl,
@@ -283,7 +291,7 @@ scene(get_together) :-
 % Szene 11: Entscheidung ueber die Möglichkeit nach Hause zu seiner Frau zu fahren (Krankenurlaub)
 scene(decision_vacation) :-
     cls,
-    write('Du hast nun die Möglichkeit, nach Hause zu deiner Frau zu fahren und Krankenurlaub zu machen.'), nl,
+    write('Du hast nun die Moeglichkeit, nach Hause zu deiner Frau zu fahren und Krankenurlaub zu machen.'), nl,
     sleep(1),
     write('***Choice: Was wirst du machen?***'), nl,
     sleep(1),
@@ -310,7 +318,7 @@ scene(taking_vacation) :-
 scene(staying_namibia) :-
     cls,
     write('Du entscheidest dich, in Namibia bei deiner Geliebten zu bleiben.'), nl,
-    .
+    scene(rudolf_meets_albrecht).
 
 % Szene 13a: Du fuehlst dich schuldig und erzaehlst deiner Frau davon
 scene(feeling_guilty) :-
@@ -359,7 +367,7 @@ scene(rudolf_tells_albrecht_that_he_is_a_good_friend) :-
     write('Du: Ich stehe auch auf dich!'), nl,
     sleep(1),    
     write('*Albrechts Augen leuchten auf, und ohne ein weiteres Wort zu verlieren, nehmt ihr euch bei den Haenden und beschliesst, gemeinsam in den Regenwald zu fluechten. Ihr verlasst das Chaos und die Gewalt des Lagers und findet Frieden in der Wildnis, wo ihr gluecklich bis ans Ende eurer Tage lebt.*'), nl,
-    scene(rudolf_meets_albrecht).
+    finish.
 
 % Szene 15b: Sie reden nur kurz miteinander
 scene(they_talk_with_each_other) :-
@@ -425,12 +433,13 @@ scene(she_does_not_like_him) :-
     sleep(2),
     write('*Ihr Gestaendnis trifft dich wie ein Schlag. Niya verlaesst dich, und du bleibst mit einem gebrochenen Herzen zurueck. Die Erkenntnis, dass sie dich nur benutzt hat, um zu entkommen, laesst einen bitteren Geschmack in deinem Mund zurueck. Der Traum von einem gemeinsamen Leben zerbricht, und du kehrst in die Einsamkeit zurueck.*'), nl,
     finish.
+
 % *****************************Choice Handling******************************
-handle_choice(colonialist_introduction, a) :-
+handle_choice(colonialist_eat, a) :-
     scene(sick_officers).
-handle_choice(colonialist_introduction, b) :-
+handle_choice(colonialist_eat, b) :-
     scene(officer_get_together).
-handle_choice(colonialist_introduction, c) :-
+handle_choice(colonialist_eat, c) :-
     scene(rudolf_and_albrecht).
 
 handle_choice(talk, a) :- 
@@ -445,8 +454,7 @@ handle_choice(telling_niya, a) :-
 handle_choice(telling_niya, b) :-
     scene(better_treatment).
 
-
-    handle_choice(decision_vacation, a) :-
+handle_choice(decision_vacation, a) :-
     scene(taking_vacation).
 handle_choice(decision_vacation, b) :-
     scene(staying_namibia).
@@ -474,3 +482,50 @@ handle_choice(do_we_want_to_flee, b) :-
     scene(she_has_to_tell_him_something).
 handle_choice(do_we_want_to_flee, c) :-
     scene(she_does_not_like_him).
+
+
+% Zutaten und Gerichte
+dish(fisch_und_kartoffeln, [fisch, kartoffeln]).
+dish(wasser_und_bohnen, [wasser, bohnen]).
+dish(haferbrei, [hafer, zimt, wasser]).
+
+% Start 
+start_cooking :- 
+    write('Willkommen zum Prolog Kochspiel!'), nl,
+    write('Bitte gib die Zutaten (als Kleinbuchstaben!) ein, um ein Gericht zu erstellen.'), nl,
+    write('Moegliche Zutaten: fisch, kartoffeln, bohnen, hafer, zimt, wasser.'), nl,
+    loop([]).
+
+loop(Ingredients) :-
+    length(Ingredients, Length),
+    Length < 4,
+    write('Gib eine Zutat ein (oder fertig. zum Beenden): '), read(Ingredient),
+    process(Ingredient, Ingredients).
+
+loop(_) :-
+    write('Max. Anzahl an Zutaten erreicht oder ungueltige Eingabe(n).'), nl,
+    write('Das Gericht kann nicht erstellt werden.'), nl,
+    start_cooking.
+
+process(fertig, Ingredients) :-
+    check_and_cook(Ingredients).
+
+process(Ingredient, Ingredients) :-
+    member(Ingredient, [fisch, kartoffeln, bohnen, hafer, zimt, wasser]),
+    append(Ingredients, [Ingredient], NewIngredients),
+    loop(NewIngredients).
+
+process(_, Ingredients) :-
+    write('Ungueltige Zutat, versuche es erneut.'), nl,
+    loop(Ingredients).
+
+check_and_cook(Ingredients) :-
+    dish(Dish, Ingredients),
+    nl, write('Du hast folgendes Gericht erstellt: '), write(Dish), nl,
+    write('Guten Appetit!'), nl,
+    scene(colonialist_eat).
+
+check_and_cook(_) :-
+    nl, write('Die Kombination der Zutaten ergeben kein Gericht.'), nl,
+    write('Bitte versuche es erneut'), nl,
+    start_cooking.
